@@ -11,22 +11,22 @@ export default function SkilledNursingPage() {
     {
       title: 'Medication Administration',
       description: 'Safe and accurate medication management including oral, injectable, and IV medications with careful monitoring for side effects and interactions.',
-      image: '/medication_ad.png',
+      image: '/home-medication.png',
     },
     {
       title: 'Wound Care',
       description: 'Professional wound assessment, cleaning, dressing changes, and monitoring for infection. Specialized care for surgical wounds, pressure ulcers, and chronic wounds.',
-      image: '/wound_care.png',
+      image: '/home-nursing.png',
     },
     {
       title: 'Post-Surgery Home Care Assistance',
       description: 'Comprehensive post-surgery home care assistance in Houston including pain management, wound monitoring, mobility support, and coordination with your surgical team for a safe recovery.',
-      image: '/post_surgical.png',
+      image: '/home-post-surgical.png',
     },
     {
       title: 'Chronic Disease Management',
       description: 'Senior care at home for individuals with chronic illness including diabetes, heart disease, and COPD. Ongoing monitoring and home care assistance for elderly with diabetes and other conditions to prevent hospitalizations.',
-      image: '/chronic_disease.png',
+      image: '/home-chronic.png',
     },
   ];
 
