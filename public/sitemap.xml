@@ -44,4 +44,12 @@
     <loc>https://www.andorahealth.com/resources</loc>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://www.andorahealth.com/privacy-policy</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.andorahealth.com/terms-and-conditions</loc>
+    <priority>0.5</priority>
+  </url>
 </urlset>

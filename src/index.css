@@ -63,3 +63,84 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+@layer components {
+  .legal-document {
+    @apply text-gray-700 leading-7;
+  }
+
+  .legal-document h1 {
+    @apply text-3xl md:text-4xl font-bold text-gray-900 mt-12 mb-3 first:mt-0;
+  }
+
+  .legal-document h2 {
+    @apply text-xl md:text-2xl font-bold text-gray-900 mt-10 mb-3 scroll-mt-36;
+  }
+
+  .legal-document h3 {
+    @apply text-lg font-bold text-gray-900 mt-6 mb-2;
+  }
+
+  .legal-document p {
+    @apply mb-4;
+  }
+
+  .legal-document .eff {
+    @apply mb-8 text-sm font-medium text-gray-500;
+  }
+
+  .legal-document ul,
+  .legal-document ol {
+    @apply mb-5 ml-6 space-y-2;
+  }
+
+  .legal-document ul {
+    @apply list-disc;
+  }
+
+  .legal-document ol {
+    @apply list-decimal;
+  }
+
+  .legal-document a {
+    @apply font-medium text-primary underline decoration-blue-200 underline-offset-2 hover:text-blue-800;
+  }
+
+  .legal-document .notice {
+    @apply my-6 rounded-r-xl border-l-4 border-primary bg-blue-50 p-5;
+  }
+
+  .legal-document .notice p:last-child,
+  .legal-document .box p:last-child {
+    @apply mb-0;
+  }
+
+  .legal-document .box {
+    @apply my-6 rounded-xl border border-gray-300 bg-gray-50 p-5;
+  }
+
+  .legal-document .toc {
+    @apply my-8 rounded-xl border border-blue-100 bg-blue-50/60 p-5 md:p-6;
+  }
+
+  .legal-document .toc .lbl {
+    @apply mb-3 text-xs font-bold tracking-widest text-gray-900;
+  }
+
+  .legal-document table {
+    @apply my-6 block w-full overflow-x-auto text-sm md:table;
+    border-collapse: collapse;
+  }
+
+  .legal-document th {
+    @apply bg-gray-900 p-3 text-left font-semibold text-white;
+  }
+
+  .legal-document td {
+    @apply border border-gray-300 p-3 align-top;
+  }
+
+  .legal-document strong {
+    @apply font-semibold text-gray-900;
+  }
+}

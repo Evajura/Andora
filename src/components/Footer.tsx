@@ -85,8 +85,8 @@ export default function Footer() {
               &copy; {currentYear} Andora. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <a href="#" className="hover:text-white transition-smooth">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-smooth">Terms of Service</a>
+              <Link to="/privacy-policy" className="hover:text-white transition-smooth">Privacy Policy</Link>
+              <Link to="/terms-and-conditions" className="hover:text-white transition-smooth">Terms &amp; Conditions</Link>
             </div>
           </div>
           <p className="mt-4 text-xs text-gray-500">
