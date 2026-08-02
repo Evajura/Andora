@@ -4,10 +4,19 @@ import Section from '../components/Section';
 import Card from '../components/Card';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import CalendlyScheduler from '../components/CalendlyScheduler';
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [isCalendlyActive, setIsCalendlyActive] = useState(false);
+
+  const openScheduler = () => {
+    setIsCalendlyActive(true);
+    window.requestAnimationFrame(() => {
+      document.getElementById('book-consultation')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  };
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -31,7 +40,7 @@ export default function ContactPage() {
       } else {
         setSubmitStatus('error');
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -233,9 +242,9 @@ export default function ContactPage() {
                 variant="primary"
                 fullWidth
                 size="large"
-                onClick={() => window.location.href = 'tel:+13462023538'}
+                onClick={openScheduler}
               >
-                Call for Free Consultation
+                Schedule a Free Consultation
               </Button>
             </Card>
 
@@ -258,6 +267,10 @@ export default function ContactPage() {
               </p>
             </div>
           </div>
+        </div>
+
+        <div className="mt-20">
+          <CalendlyScheduler active={isCalendlyActive} onActivate={openScheduler} />
         </div>
       </Section>
     </>
