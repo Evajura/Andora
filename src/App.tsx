@@ -16,6 +16,7 @@ import AdvancedCarePage from './pages/AdvancedCarePage';
 import PostHospitalPage from './pages/PostHospitalPage';
 import RespiteCarePage from './pages/RespiteCarePage';
 import LegalDocumentPage from './pages/LegalDocumentPage';
+import CookieConsent from './components/CookieConsent';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         </main>
         <Footer />
         <FloatingCallButton />
+        <CookieConsent />
       </div>
     </Router>
   );

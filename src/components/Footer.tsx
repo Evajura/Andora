@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin, Facebook, Linkedin, Twitter } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { COOKIE_PREFERENCES_EVENT } from '../lib/cookiePreferences';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -87,6 +88,13 @@ export default function Footer() {
             <div className="flex gap-6">
               <Link to="/privacy-policy" className="hover:text-white transition-smooth">Privacy Policy</Link>
               <Link to="/terms-and-conditions" className="hover:text-white transition-smooth">Terms &amp; Conditions</Link>
+              <button
+                type="button"
+                onClick={() => window.dispatchEvent(new Event(COOKIE_PREFERENCES_EVENT))}
+                className="hover:text-white transition-smooth"
+              >
+                Cookie Preferences
+              </button>
             </div>
           </div>
           <p className="mt-4 text-xs text-gray-500">
