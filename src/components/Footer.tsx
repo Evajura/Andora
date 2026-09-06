@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Facebook, Linkedin, Twitter } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { COOKIE_PREFERENCES_EVENT } from '../lib/cookiePreferences';
 
@@ -29,6 +29,7 @@ export default function Footer() {
               <li><Link to="/services" className="hover:text-white transition-smooth">Services</Link></li>
               <li><Link to="/about" className="hover:text-white transition-smooth">About Us</Link></li>
               <li><Link to="/caregivers" className="hover:text-white transition-smooth">Our Caregivers</Link></li>
+              <li><Link to="/service-areas" className="hover:text-white transition-smooth">Service Areas</Link></li>
               <li><Link to="/contact" className="hover:text-white transition-smooth">Contact</Link></li>
             </ul>
           </div>
@@ -50,8 +51,8 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <Phone size={16} className="mt-1 flex-shrink-0" />
-                <a href="tel:+13462023538" className="hover:text-white transition-smooth">
-                  (346) 202-3538
+                <a href="tel:+18326793716" className="hover:text-white transition-smooth">
+                  (832) 679-3716
                 </a>
               </li>
               <li className="flex items-start gap-2">
@@ -62,21 +63,10 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin size={16} className="mt-1 flex-shrink-0" />
-                <span>5718 Westheimer Rd, Suite 1000<br />Houston, TX 77057</span>
+                <span>7003 Telford Hollow Trail<br />Richmond, TX 77407</span>
               </li>
             </ul>
 
-            <div className="flex gap-3 mt-4">
-              <a href="#" className="hover:text-white transition-smooth" aria-label="Facebook">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="hover:text-white transition-smooth" aria-label="LinkedIn">
-                <Linkedin size={20} />
-              </a>
-              <a href="#" className="hover:text-white transition-smooth" aria-label="Twitter">
-                <Twitter size={20} />
-              </a>
-            </div>
           </div>
         </div>
 
@@ -98,7 +88,7 @@ export default function Footer() {
             </div>
           </div>
           <p className="mt-4 text-xs text-gray-500">
-            Licensed Home Health Agency | State-Licensed Provider
+            Licensed by the Texas Health and Human Services Commission | HCSSA License No. 024760
           </p>
         </div>
       </div>

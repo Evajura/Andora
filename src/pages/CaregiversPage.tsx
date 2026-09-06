@@ -153,7 +153,7 @@ export default function CaregiversPage() {
               Take the first step toward a rewarding career in home healthcare. Browse our current openings above or send us your resume directly.
             </p>
             <p className="text-blue-100 mb-8 text-sm">
-              Questions? Email us at <a href="mailto:Privatecare@andorahealth.com" className="text-white underline">Privatecare@andorahealth.com</a> or call <a href="tel:+13462023538" className="text-white underline">(346) 202-3538</a>.
+              Questions? Email us at <a href="mailto:Privatecare@andorahealth.com" className="text-white underline">Privatecare@andorahealth.com</a> or call <a href="tel:+18326793716" className="text-white underline">(832) 679-3716</a>.
             </p>
             <Button
               variant="cta"

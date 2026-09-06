@@ -72,7 +72,7 @@ export default function AdvancedCarePage() {
     <>
       <SEO
         title="24/7 Home Care & Dementia Care in Houston | Andora Home Care"
-        description="Specialized 24/7 home care for seniors in Houston. Dementia home care services, Alzheimer's care, Parkinson's care, and live-in caregiver services. Licensed home care agency with around-the-clock RN oversight. Call (346) 202-3538."
+        description="Around-the-clock home care and dementia support for Houston-area families. Discuss care needs and availability at (832) 679-3716."
         canonical="/services/24-7-care"
       />
 
@@ -271,9 +271,9 @@ export default function AdvancedCarePage() {
               variant="outline"
               size="large"
               className="border-white text-white hover:bg-white hover:text-primary"
-              onClick={() => window.location.href = 'tel:+13462023538'}
+              onClick={() => window.location.href = 'tel:+18326793716'}
             >
-              Call (346) 202-3538
+              Call (832) 679-3716
             </Button>
           </div>
         </div>

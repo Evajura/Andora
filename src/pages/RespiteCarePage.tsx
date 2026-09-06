@@ -70,7 +70,7 @@ export default function RespiteCarePage() {
     <>
       <SEO
         title="Respite Care for Family Caregivers in Houston | Andora Home Care"
-        description="Respite care for family caregivers in Houston. Flexible companion care services for seniors, hourly home care, and family caregiver support. Take the break you deserve while your loved one receives compassionate care. Call (346) 202-3538."
+        description="Respite care and family caregiver support for Houston-area families. Discuss schedules, support needs, and availability at (832) 679-3716."
         canonical="/services/respite-care"
       />
 
@@ -269,9 +269,9 @@ export default function RespiteCarePage() {
               variant="outline"
               size="large"
               className="border-white text-white hover:bg-white hover:text-primary"
-              onClick={() => window.location.href = 'tel:+13462023538'}
+              onClick={() => window.location.href = 'tel:+18326793716'}
             >
-              Call (346) 202-3538
+              Call (832) 679-3716
             </Button>
           </div>
         </div>

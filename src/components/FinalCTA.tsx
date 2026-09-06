@@ -7,21 +7,21 @@ export default function FinalCTA() {
       <div className="container-custom">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-h2 md:text-[48px] mb-6 leading-tight">
-            Get Compassionate 24-Hour Care Today
+            Talk Through Care at Home
           </h2>
           <p className="text-xl mb-10 opacity-95 leading-relaxed">
-            Your loved ones deserve the best care possible. Let our experienced team provide the professional, compassionate support they need in the comfort of home.
+            Start with a straightforward conversation about the support you need, the schedule you are considering, and whether Andora is the right fit.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
             <Button
               variant="cta"
               size="large"
-              onClick={() => window.location.href = 'tel:+13462023538'}
+              onClick={() => window.location.href = 'tel:+18326793716'}
               className="text-lg"
             >
               <Phone className="inline mr-2" size={20} />
-              Call (346) 202-3538
+              Call (832) 679-3716
             </Button>
             <Button
               variant="outline"

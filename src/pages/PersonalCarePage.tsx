@@ -72,7 +72,7 @@ export default function PersonalCarePage() {
     <>
       <SEO
         title="Personal Care Services for Elderly in Houston | Andora Home Care"
-        description="Compassionate personal care services for elderly in Houston. Bathing, grooming, meal prep, companionship, and daily living assistance. Non-medical home care for elderly with dignity and respect. Call (346) 202-3538."
+        description="Personal care for Houston-area families, including bathing, grooming, meal preparation, companionship, and daily-living assistance. Call (832) 679-3716."
         canonical="/services/personal-care"
       />
 
@@ -271,9 +271,9 @@ export default function PersonalCarePage() {
               variant="outline"
               size="large"
               className="border-white text-white hover:bg-white hover:text-primary"
-              onClick={() => window.location.href = 'tel:+13462023538'}
+              onClick={() => window.location.href = 'tel:+18326793716'}
             >
-              Call (346) 202-3538
+              Call (832) 679-3716
             </Button>
           </div>
         </div>

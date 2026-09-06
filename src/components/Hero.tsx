@@ -26,7 +26,7 @@ export default function Hero() {
             <Button
               variant="cta"
               size="large"
-              onClick={() => window.location.href = 'tel:+13462023538'}
+              onClick={() => window.location.href = 'tel:+18326793716'}
             >
               Speak to a Care Specialist
             </Button>
@@ -36,7 +36,7 @@ export default function Hero() {
               onClick={() => navigate('/contact')}
               className="border-white text-white hover:bg-white hover:text-primary"
             >
-              Schedule Free Assessment
+              Discuss Care Needs
             </Button>
           </div>
 

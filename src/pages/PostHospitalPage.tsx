@@ -70,7 +70,7 @@ export default function PostHospitalPage() {
     <>
       <SEO
         title="Post-Hospital & Surgery Home Care in Houston | Andora Home Care"
-        description="Post-surgery home care assistance in Houston. Home care services for stroke recovery, wound care, medication management, and rehabilitation. Licensed home care agency helping seniors recover safely at home. Call (346) 202-3538."
+        description="Post-hospital and post-surgery home care support for Houston-area families. Discuss recovery support, care coordination, and availability at (832) 679-3716."
         canonical="/services/post-hospital-recovery"
       />
 
@@ -269,9 +269,9 @@ export default function PostHospitalPage() {
               variant="outline"
               size="large"
               className="border-white text-white hover:bg-white hover:text-primary"
-              onClick={() => window.location.href = 'tel:+13462023538'}
+              onClick={() => window.location.href = 'tel:+18326793716'}
             >
-              Call (346) 202-3538
+              Call (832) 679-3716
             </Button>
           </div>
         </div>

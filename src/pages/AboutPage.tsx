@@ -31,7 +31,7 @@ export default function AboutPage() {
     { number: '24/7', label: 'Care Availability' },
     { number: 'State-Licensed', label: 'Home Care Provider' },
     { number: 'RN-Led', label: 'Clinical Oversight' },
-    { number: '5-Star', label: 'Family-Rated Care' }
+    { number: 'Houston-Area', label: 'Local Support' }
   ];
 
   return (
@@ -47,7 +47,7 @@ export default function AboutPage() {
         <div className="text-center max-w-3xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl p-8">
           <h1 className="heading-1 mb-6">About Andora</h1>
           <p className="text-xl text-gray-600 leading-relaxed">
-            Houston's trusted partner in private duty home health care, bringing professional medical care and compassionate support directly to your home.
+            RN-led private-duty home care with professional support, clear communication, and a thoughtful approach to care at home.
           </p>
         </div>
       </Section>

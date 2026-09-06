@@ -16,6 +16,9 @@ import AdvancedCarePage from './pages/AdvancedCarePage';
 import PostHospitalPage from './pages/PostHospitalPage';
 import RespiteCarePage from './pages/RespiteCarePage';
 import LegalDocumentPage from './pages/LegalDocumentPage';
+import ResourceArticlePage from './pages/ResourceArticlePage';
+import ServiceAreasPage from './pages/ServiceAreasPage';
+import NotFoundPage from './pages/NotFoundPage';
 import CookieConsent from './components/CookieConsent';
 
 function App() {
@@ -38,8 +41,11 @@ function App() {
             <Route path="/caregivers" element={<CaregiversPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/resources" element={<ResourcesPage />} />
+            <Route path="/resources/:slug" element={<ResourceArticlePage />} />
+            <Route path="/service-areas" element={<ServiceAreasPage />} />
             <Route path="/privacy-policy" element={<LegalDocumentPage document="privacy" />} />
             <Route path="/terms-and-conditions" element={<LegalDocumentPage document="terms" />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>
         <Footer />

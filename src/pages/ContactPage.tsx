@@ -51,8 +51,8 @@ export default function ContactPage() {
     {
       icon: Phone,
       title: 'Phone',
-      details: ['(346) 202-3538', 'Available 24/7'],
-      action: 'tel:+13462023538'
+      details: ['(832) 679-3716', 'Available 24/7'],
+      action: 'tel:+18326793716'
     },
     {
       icon: Mail,
@@ -63,7 +63,7 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: 'Address',
-      details: ['5718 Westheimer Rd, Suite 1000', 'Houston, TX 77057'],
+      details: ['7003 Telford Hollow Trail', 'Richmond, TX 77407'],
       action: null
     },
     {
@@ -77,8 +77,8 @@ export default function ContactPage() {
   return (
     <>
       <SEO
-        title="Contact Andora Home Care | Free Consultation in Houston"
-        description="Call (346) 202-3538 or visit 5718 Westheimer Rd, Suite 1000, Houston, TX 77057. Free consultations available for private duty nursing and home care services."
+        title="Contact Andora Home Care | Houston-Area Care Support"
+        description="Call (832) 679-3716 or visit 7003 Telford Hollow Trail, Richmond, TX 77407. Discuss private-duty nursing and home care services."
         canonical="/contact"
       />
       <Section
@@ -87,7 +87,7 @@ export default function ContactPage() {
         <div className="text-center max-w-3xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl p-8">
           <h1 className="heading-1 mb-6">Contact Us</h1>
           <p className="text-xl text-gray-600 leading-relaxed">
-            We're here to answer your questions and help you get started with the care you need. Reach out today for a free consultation.
+            We’re here to answer questions and talk through the support you are considering. Reach out to discuss care needs and current availability.
           </p>
         </div>
       </Section>
@@ -189,7 +189,7 @@ export default function ContactPage() {
                   name="phone"
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-smooth"
-                  placeholder="(346) 202-3538"
+                  placeholder="(832) 679-3716"
                 />
               </div>
 
@@ -211,14 +211,15 @@ export default function ContactPage() {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Message *
+                  How can we help? *
                 </label>
                 <textarea
                   name="message"
                   required
                   rows={5}
+                  maxLength={1000}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-smooth resize-none"
-                  placeholder="Tell us about your care needs..."
+                  placeholder="Share non-medical contact or scheduling details only."
                 ></textarea>
               </div>
 
@@ -227,16 +228,16 @@ export default function ContactPage() {
               </Button>
 
               <p className="text-sm text-gray-500 text-center">
-                By submitting this form, you agree to our privacy policy and consent to be contacted.
+                Please do not include diagnoses, medical records, insurance IDs, or other private health information here. By submitting, you agree to our privacy policy and consent to be contacted.
               </p>
             </form>
           </Card>
 
           <div>
             <Card className="p-8 mb-6">
-              <h3 className="heading-3 mb-4">Schedule a Free Consultation</h3>
+              <h3 className="heading-3 mb-4">Schedule a Care Conversation</h3>
               <p className="text-gray-600 mb-6">
-                Not sure where to start? Our care coordinators are available to discuss your needs and create a personalized care plan at no cost.
+                Not sure where to start? Schedule time to discuss the support you are considering, the client’s routines, and what next steps may fit.
               </p>
               <Button
                 variant="primary"
@@ -244,7 +245,7 @@ export default function ContactPage() {
                 size="large"
                 onClick={openScheduler}
               >
-                Schedule a Free Consultation
+                Schedule a Care Conversation
               </Button>
             </Card>
 
@@ -255,7 +256,7 @@ export default function ContactPage() {
               </p>
               <div className="bg-white/20 rounded-lg p-4 text-center">
                 <Phone className="mx-auto mb-2" size={32} />
-                <p className="text-2xl font-bold">(346) 202-3538</p>
+                <p className="text-2xl font-bold">(832) 679-3716</p>
                 <p className="text-sm text-blue-100 mt-2">Available 24/7/365</p>
               </div>
             </Card>

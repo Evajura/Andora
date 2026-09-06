@@ -28,7 +28,7 @@ const stats = [
   { number: '24/7', label: 'Care Availability' },
   { number: 'State-Licensed', label: 'Home Care Provider' },
   { number: 'RN-Led', label: 'Clinical Oversight' },
-  { number: '5-Star', label: 'Family-Rated Care' },
+  { number: 'Houston-Area', label: 'Local Support' },
 ];
 
 export default function WhyChooseUs() {
@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
             Why Families Trust Andora
           </h2>
           <p className="text-body text-gray-600 mb-8 leading-relaxed">
-            We understand that choosing a care provider is one of the most important decisions you'll make. Our commitment to excellence, compassion, and professionalism has made us Houston's trusted partner in home healthcare.
+            Choosing care for yourself or someone close to you is a significant decision. Andora brings clear communication, clinical oversight, and thoughtful coordination to each conversation and care plan.
           </p>
 
           <div className="space-y-5">

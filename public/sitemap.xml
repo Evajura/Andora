@@ -45,6 +45,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.andorahealth.com/service-areas</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.andorahealth.com/resources/home-care-vs-home-health</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.andorahealth.com/resources/signs-your-loved-one-needs-home-care</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.andorahealth.com/resources/how-to-pay-for-home-care</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.andorahealth.com/privacy-policy</loc>
     <priority>0.5</priority>
   </url>

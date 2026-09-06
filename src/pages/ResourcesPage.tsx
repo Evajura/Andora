@@ -1,4 +1,5 @@
 import { BookOpen, FileText, Video, HelpCircle, Download, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Section from '../components/Section';
 import Card from '../components/Card';
 import SEO from '../components/SEO';
@@ -9,32 +10,17 @@ export default function ResourcesPage() {
     {
       title: 'What Is Home Care for Elderly?',
       description: 'A comprehensive guide to understanding the differences between home care and home health care, types of services available, and what to expect.',
-      category: 'Getting Started'
+      category: 'Getting Started', slug: 'home-care-vs-home-health'
     },
     {
       title: 'Signs Your Loved One Needs Home Care',
       description: 'Learn to recognize the key signs that indicate it may be time to consider in-home care services for your aging parent or family member.',
-      category: 'Getting Started'
+      category: 'Getting Started', slug: 'signs-your-loved-one-needs-home-care'
     },
     {
       title: 'How to Pay for Home Care Services',
       description: 'Understanding costs of home care services for seniors, insurance options, Medicare coverage, and financial planning for long-term care.',
-      category: 'Financial Planning'
-    },
-    {
-      title: 'Caring for Someone with Dementia',
-      description: 'Expert tips on common challenges in senior caregiving for dementia and Alzheimer\'s — including safety, communication, and emotional support.',
-      category: 'Caregiving Tips'
-    },
-    {
-      title: 'Best Practices for Hiring a Home Care Provider',
-      description: 'Top questions to ask a home care provider, how to evaluate a home care agency, and what to look for in quality caregivers.',
-      category: 'Choosing Care'
-    },
-    {
-      title: 'Fall Prevention Guide',
-      description: 'Creating a safe home environment and reducing fall risks for elderly or mobility-impaired individuals living at home.',
-      category: 'Health & Safety'
+      category: 'Financial Planning', slug: 'how-to-pay-for-home-care'
     }
   ];
 
@@ -149,16 +135,18 @@ export default function ResourcesPage() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {guides.map((guide, index) => (
-            <Card key={index} className="hover:shadow-xl transition-smooth cursor-pointer">
+            <Link key={index} to={`/resources/${guide.slug}`} className="block">
+            <Card className="h-full hover:shadow-xl transition-smooth">
               <div className="text-sm text-primary font-semibold mb-2">
                 {guide.category}
               </div>
               <h3 className="font-bold text-lg mb-3">{guide.title}</h3>
               <p className="text-gray-600 text-sm mb-4">{guide.description}</p>
               <div className="flex items-center gap-2 text-primary font-medium text-sm">
-                Read More <ExternalLink size={16} />
+                Read guide <ExternalLink size={16} />
               </div>
             </Card>
+            </Link>
           ))}
         </div>
       </Section>

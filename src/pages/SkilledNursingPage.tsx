@@ -72,7 +72,7 @@ export default function SkilledNursingPage() {
     <>
       <SEO
         title="Skilled Nursing Care at Home in Houston | Andora Home Care"
-        description="Licensed home care agency providing skilled nursing care at home in Houston. In-home care services for seniors including post-surgery home care assistance, chronic disease management, and 24/7 home care. Call (346) 202-3538."
+        description="Skilled nursing care at home for Houston-area families. Discuss appropriate in-home clinical support and availability at (832) 679-3716."
         canonical="/services/skilled-nursing"
       />
 
@@ -273,9 +273,9 @@ export default function SkilledNursingPage() {
               variant="outline"
               size="large"
               className="border-white text-white hover:bg-white hover:text-primary"
-              onClick={() => window.location.href = 'tel:+13462023538'}
+              onClick={() => window.location.href = 'tel:+18326793716'}
             >
-              Call (346) 202-3538
+              Call (832) 679-3716
             </Button>
           </div>
         </div>

@@ -44,7 +44,7 @@ export default function CoverageArea() {
             ))}
           </div>
           <p className="text-gray-600 mt-6 italic">
-            Don't see your area listed? Call us at (346) 202-3538 to confirm service availability in your neighborhood.
+            Don't see your area listed? Call us at (832) 679-3716 to confirm service availability in your neighborhood.
           </p>
         </div>
 

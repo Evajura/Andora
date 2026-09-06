@@ -58,7 +58,7 @@ export default function ServicesPage() {
     <>
       <SEO
         title="Home Care Services in Houston | Andora Home Care"
-        description="Affordable elderly care in Houston. Skilled nursing, personal care, 24/7 care, respite care, and post-hospital recovery. Explore all types of home care for seniors from Houston's trusted licensed home care agency. Call (346) 202-3538."
+        description="Private-duty nursing, personal care, 24/7 care, respite care, and post-hospital recovery for Houston-area families. Call (832) 679-3716."
         canonical="/services"
       />
       <Section
@@ -116,9 +116,9 @@ export default function ServicesPage() {
             <Button
               variant="secondary"
               size="large"
-              onClick={() => window.location.href = 'tel:+13462023538'}
+              onClick={() => window.location.href = 'tel:+18326793716'}
             >
-              Call (346) 202-3538
+              Call (832) 679-3716
             </Button>
             <Button
               variant="outline"

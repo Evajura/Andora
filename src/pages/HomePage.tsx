@@ -13,7 +13,7 @@ export default function HomePage() {
     <>
       <SEO
         title="Andora Home Care | Private Duty Nursing in Houston, TX"
-        description="Licensed private duty nursing and 24-hour home care in Houston. Professional, compassionate caregivers providing skilled nursing, companion care, and personal care services. Call (346) 202-3538."
+        description="Licensed private duty nursing and 24-hour home care in Houston. Professional, compassionate caregivers providing skilled nursing, companion care, and personal care services. Call (832) 679-3716."
         canonical="/"
       />
       <LocalBusinessSchema />
