@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -57,6 +55,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
   * {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
@@ -65,6 +64,11 @@
 }
 
 @layer components {
+  .heading-1 { @apply text-3xl md:text-5xl font-bold leading-tight text-primary; }
+  .heading-2 { @apply text-2xl md:text-3xl font-bold leading-snug text-primary; }
+  .heading-3 { @apply text-xl md:text-2xl font-semibold leading-snug; }
+  .care-link { @apply font-semibold text-primary underline underline-offset-4 hover:text-primary-dark; }
+
   .legal-document {
     @apply text-gray-700 leading-7;
   }

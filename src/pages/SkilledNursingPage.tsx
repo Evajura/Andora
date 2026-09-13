@@ -1,3 +1,4 @@
+import ResponsiveImage from "../components/ResponsiveImage";
 import { Stethoscope, CheckCircle, Shield, Clock, Heart, Users, ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import Section from '../components/Section';
@@ -16,12 +17,12 @@ export default function SkilledNursingPage() {
     {
       title: 'Wound Care',
       description: 'Professional wound assessment, cleaning, dressing changes, and monitoring for infection. Specialized care for surgical wounds, pressure ulcers, and chronic wounds.',
-      image: '/home-nursing.png',
+      image: '/home-post-surgical.png',
     },
     {
       title: 'Post-Surgery Home Care Assistance',
       description: 'Comprehensive post-surgery home care assistance in Houston including pain management, wound monitoring, mobility support, and coordination with your surgical team for a safe recovery.',
-      image: '/home-post-surgical.png',
+      image: '/care-scenes/recovery-assistance.png',
     },
     {
       title: 'Chronic Disease Management',
@@ -71,7 +72,7 @@ export default function SkilledNursingPage() {
   return (
     <>
       <SEO
-        title="Skilled Nursing Care at Home in Houston | Andora Home Care"
+        title="Houston Skilled Nursing | Andora Private Duty Home Health"
         description="Skilled nursing care at home for Houston-area families. Discuss appropriate in-home clinical support and availability at (832) 679-3716."
         canonical="/services/skilled-nursing"
       />
@@ -110,7 +111,7 @@ export default function SkilledNursingPage() {
 
             {/* Right — Image */}
             <div className="flex items-center justify-center md:py-4">
-              <img
+              <ResponsiveImage
                 src="/Layer 9.png"
                 alt="Skilled nurse providing attentive care to a patient at home in Houston"
                 className="w-full max-h-[350px] md:max-h-[420px] object-cover rounded-2xl"
@@ -131,8 +132,8 @@ export default function SkilledNursingPage() {
         <div className="grid md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <div key={index} className="group rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 bg-white">
-              <div className="relative h-56 overflow-hidden">
-                <img
+              <div className="relative aspect-[3/2] overflow-hidden">
+                <ResponsiveImage
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -175,7 +176,7 @@ export default function SkilledNursingPage() {
           </div>
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-xl">
-              <img
+              <ResponsiveImage
                 src="/Layer 9.png"
                 alt="Skilled nurse providing attentive care to a patient at home"
                 className="w-full h-[450px] object-cover"

@@ -1,3 +1,5 @@
+import { isLocalPreview } from './localPreview';
+
 export const COOKIE_PREFERENCES_EVENT = 'andora:open-cookie-preferences';
 export const COOKIE_CONSENT_CHANGED_EVENT = 'andora:cookie-consent-changed';
 export const COOKIE_PREFERENCES_STORAGE_KEY = 'andora-cookie-preferences';
@@ -21,6 +23,7 @@ export function createConsentId() {
 }
 
 export async function logCookiePreferences(entry: ConsentLogEntry) {
+  if (isLocalPreview) return;
   const endpoint = import.meta.env.VITE_CONSENT_LOG_ENDPOINT;
   if (!endpoint) return;
 

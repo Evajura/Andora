@@ -1,6 +1,8 @@
+import ResponsiveImage from "./ResponsiveImage";
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { COOKIE_PREFERENCES_EVENT } from '../lib/cookiePreferences';
+import { brand } from '../lib/brand';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,10 +13,10 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="mb-4">
-              <img
-                src="/Andora_BlackLogo_Variant_PNG@14x.png"
-                alt="Andora"
-                className="h-16 w-auto brightness-0 invert"
+              <ResponsiveImage
+                src={brand.logo}
+                alt={brand.name}
+                className="h-28 w-auto brightness-0 invert"
               />
             </div>
             <p className="text-sm leading-relaxed">
@@ -30,6 +32,7 @@ export default function Footer() {
               <li><Link to="/about" className="hover:text-white transition-smooth">About Us</Link></li>
               <li><Link to="/caregivers" className="hover:text-white transition-smooth">Our Caregivers</Link></li>
               <li><Link to="/service-areas" className="hover:text-white transition-smooth">Service Areas</Link></li>
+              <li><Link to="/resources" className="hover:text-white transition-smooth">Family Care Guides</Link></li>
               <li><Link to="/contact" className="hover:text-white transition-smooth">Contact</Link></li>
             </ul>
           </div>
@@ -37,12 +40,11 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-sm">
-              <li>Skilled Nursing Care</li>
-              <li>Post-Surgical Care</li>
-              <li>Chronic Disease Management</li>
-              <li>Companion Care</li>
-              <li>Personal Care</li>
-              <li>Medication Management</li>
+              <li><Link to="/services/skilled-nursing" className="hover:text-white">Skilled Nursing Care</Link></li>
+              <li><Link to="/services/post-hospital-recovery" className="hover:text-white">Post-Hospital Recovery</Link></li>
+              <li><Link to="/services/24-7-care" className="hover:text-white">24-Hour Home Care</Link></li>
+              <li><Link to="/services/personal-care" className="hover:text-white">Personal &amp; Companion Care</Link></li>
+              <li><Link to="/services/respite-care" className="hover:text-white">Respite Care</Link></li>
             </ul>
           </div>
 
@@ -73,9 +75,9 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8 text-sm text-center md:text-left">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p>
-              &copy; {currentYear} Andora. All rights reserved.
+              &copy; {currentYear} {brand.name}. All rights reserved.
             </p>
-            <div className="flex gap-6">
+            <div className="flex flex-wrap justify-center gap-6">
               <Link to="/privacy-policy" className="hover:text-white transition-smooth">Privacy Policy</Link>
               <Link to="/terms-and-conditions" className="hover:text-white transition-smooth">Terms &amp; Conditions</Link>
               <button
@@ -88,8 +90,12 @@ export default function Footer() {
             </div>
           </div>
           <p className="mt-4 text-xs text-gray-500">
+            {brand.legalName}, doing business as {brand.name}.
+          </p>
+          <p className="mt-3 text-xs text-gray-500">
             Licensed by the Texas Health and Human Services Commission | HCSSA License No. 024760
           </p>
+          <p className="mt-3 text-xs leading-5 text-gray-400">Some care images are AI-generated illustrations, not photographs of actual Andora staff or clients.</p>
         </div>
       </div>
     </footer>

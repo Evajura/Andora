@@ -1,3 +1,4 @@
+import ResponsiveImage from "../components/ResponsiveImage";
 import { Heart, CheckCircle, Shield, Clock, Users, ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import Section from '../components/Section';
@@ -11,12 +12,12 @@ export default function PersonalCarePage() {
     {
       title: 'Bathing & Personal Hygiene',
       description: 'Dignified assistance with bathing, grooming, oral care, and personal hygiene care for elderly at home — maintaining comfort and self-esteem every day.',
-      image: '/personal_hygiene.png',
+      image: '/care-scenes/personal-hygiene.png',
     },
     {
       title: 'Mobility & Transfer Support',
       description: 'Safe assistance with walking, transfers, and positioning for elderly with mobility issues — reducing fall risk while encouraging independence.',
-      image: '/mobility.png',
+      image: '/care-scenes/walker-support.png',
     },
     {
       title: 'Meal Preparation & Nutrition',
@@ -26,7 +27,7 @@ export default function PersonalCarePage() {
     {
       title: 'Companionship & Emotional Support',
       description: 'Meaningful conversation, activities, and emotional support in senior home care to combat loneliness and promote mental well-being for elderly living alone.',
-      image: '/companionship.png',
+      image: '/care-scenes/garden-companionship.png',
     },
   ];
 
@@ -71,7 +72,7 @@ export default function PersonalCarePage() {
   return (
     <>
       <SEO
-        title="Personal Care Services for Elderly in Houston | Andora Home Care"
+        title="Houston Personal Care | Andora Private Duty Home Health"
         description="Personal care for Houston-area families, including bathing, grooming, meal preparation, companionship, and daily-living assistance. Call (832) 679-3716."
         canonical="/services/personal-care"
       />
@@ -108,7 +109,7 @@ export default function PersonalCarePage() {
             </div>
 
             <div className="flex items-center justify-center md:py-4">
-              <img
+              <ResponsiveImage
                 src="/IMG_2598.JPG"
                 alt="Caregiver providing personal care assistance to elderly client at home in Houston"
                 className="w-full max-h-[350px] md:max-h-[420px] object-cover rounded-2xl"
@@ -129,8 +130,8 @@ export default function PersonalCarePage() {
         <div className="grid md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <div key={index} className="group rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 bg-white">
-              <div className="relative h-56 overflow-hidden">
-                <img
+              <div className="relative aspect-[3/2] overflow-hidden">
+                <ResponsiveImage
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -173,7 +174,7 @@ export default function PersonalCarePage() {
           </div>
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-xl">
-              <img
+              <ResponsiveImage
                 src="/IMG_2598.JPG"
                 alt="Compassionate caregiver assisting elderly client with daily activities"
                 className="w-full h-[450px] object-cover"

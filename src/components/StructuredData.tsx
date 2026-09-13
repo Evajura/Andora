@@ -1,12 +1,16 @@
 import { Helmet } from 'react-helmet-async';
+import { brand } from '../lib/brand';
 
 export function LocalBusinessSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'MedicalBusiness',
-    name: 'Andora Home Care',
+    '@id': 'https://www.andorahealth.com/#organization',
+    name: brand.name,
+    legalName: brand.legalName,
+    alternateName: brand.shortName,
     url: 'https://www.andorahealth.com',
-    logo: 'https://www.andorahealth.com/Andora_BlackLogo_Variant_PNG@14x.png',
+    logo: `${brand.url}${brand.logo}`,
     telephone: '+1-832-679-3716',
     email: 'Privatecare@andorahealth.com',
     identifier: {
@@ -60,6 +64,7 @@ export function LocalBusinessSchema() {
 
   return (
     <Helmet>
+      <script type="application/ld+json">{JSON.stringify({ '@context': 'https://schema.org', '@type': 'WebSite', '@id': `${brand.url}/#website`, name: brand.name, alternateName: brand.shortName, url: brand.url, publisher: { '@id': `${brand.url}/#organization` } })}</script>
       <script type="application/ld+json">{JSON.stringify(schema)}</script>
     </Helmet>
   );

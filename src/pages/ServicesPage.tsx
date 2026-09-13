@@ -1,10 +1,11 @@
 import { Heart, Clock, Users, Home, Stethoscope, HandHeart } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Section from '../components/Section';
 import Card from '../components/Card';
 import Button from '../components/Button';
 import FAQ from '../components/FAQ';
 import SEO from '../components/SEO';
+import ResponsiveImage from '../components/ResponsiveImage';
 
 export default function ServicesPage() {
   const navigate = useNavigate();
@@ -27,81 +28,81 @@ export default function ServicesPage() {
     {
       icon: Clock,
       title: '24/7 Care',
-      description: 'Round-the-clock nursing care for those who need continuous medical supervision and support.',
-      features: ['24-Hour RN Availability', 'Overnight Care', 'Emergency Response', 'Continuous Monitoring', 'Family Communication'],
-      image: 'https://images.pexels.com/photos/7551616/pexels-photo-7551616.jpeg?auto=compress&cs=tinysrgb&w=600'
+      description: 'Coordinated day and night support, with staffing based on the client’s needs, care plan, and current availability. Ask about nursing needs separately.',
+      features: ['Day & Night Coverage Planning', 'Clear Caregiver Handoffs', 'Family Communication'],
+      image: '/care-scenes/evening-handoff.png'
     },
     {
       icon: Users,
       title: 'Companionship',
       description: 'Social interaction and emotional support to combat loneliness and promote mental well-being.',
       features: ['Conversation & Activities', 'Errands & Transportation', 'Social Engagement', 'Hobby Support', 'Reading & Games'],
-      image: '/Layer 10.jpeg'
+      image: '/care-scenes/garden-companionship.png'
     },
     {
       icon: Home,
       title: 'Respite Care',
       description: 'Temporary relief for family caregivers while ensuring continuous quality care for your loved one.',
       features: ['Flexible Scheduling', 'Short or Long-term', 'Qualified Caregivers', 'Peace of Mind', 'Family Support'],
-      image: '/Layer 8.png'
+      image: '/care-scenes/respite-family-departure.png'
     },
     {
       icon: HandHeart,
       title: 'Specialized Care',
-      description: 'Expert care for complex medical conditions including dementia, Alzheimer\'s, and chronic illnesses.',
-      features: ['Dementia Care', "Alzheimer's Support", 'Parkinson\'s Care', 'Diabetes Management', 'Cardiac Care'],
-      image: 'https://images.pexels.com/photos/7551664/pexels-photo-7551664.jpeg?auto=compress&cs=tinysrgb&w=600'
+      description: 'Talk through support for a loved one living with dementia or a chronic illness. Daily assistance and clinical nursing tasks require different care arrangements.',
+      features: ['Familiar Routines', 'Individual Care Planning', 'Appropriate Nursing Support'],
+      image: '/care-scenes/specialized-support.png'
     }
   ];
 
   return (
     <>
       <SEO
-        title="Home Care Services in Houston | Andora Home Care"
+        title="Houston Care Services | Andora Private Duty Home Health"
         description="Private-duty nursing, personal care, 24/7 care, respite care, and post-hospital recovery for Houston-area families. Call (832) 679-3716."
         canonical="/services"
       />
       <Section
-        className="pt-52 pb-36 bg-cover bg-no-repeat min-h-[650px] flex items-center relative"
-        style={{ backgroundImage: "url('/Layer11.jpeg')", backgroundPosition: 'center 20%' }}
+        className="!py-16 md:!py-24"
+        background="light"
       >
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="text-center max-w-3xl mx-auto p-8 relative z-10">
-          <h1 className="heading-1 mb-6 text-white font-bold drop-shadow-lg">Types of Home Care for Seniors</h1>
-          <p className="text-xl text-white font-semibold leading-relaxed drop-shadow-lg">
-            From skilled nursing to companion care, we offer affordable elderly care in Houston tailored to your unique needs. Explore our full range of in-home care services for seniors and find the right fit for your family.
+        <div className="max-w-3xl">
+          <p className="text-sm tracking-widest uppercase font-semibold text-primary mb-4">Houston-area care, planned around you</p>
+          <h1 className="heading-1 mb-6">Find the right support for life at home.</h1>
+          <p className="text-xl text-gray-700 leading-relaxed">
+            Andora Private Duty Home Health supports adults who need everyday assistance, skilled nursing, or help returning home after a hospital stay. Start with the help your family needs; we will discuss an appropriate care plan, schedule, and availability.
           </p>
+          <Link to="/resources/home-care-vs-home-health" className="care-link inline-block mt-6">Understand home care vs. home health</Link>
         </div>
       </Section>
 
       <Section>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <h2 className="heading-2 mb-8">Compare your care options</h2>
+        <div className="grid md:grid-cols-2 gap-6">
           {services.map((service, index) => (
             <Card key={index} className="p-0 overflow-hidden hover:shadow-xl transition-smooth">
-              <img
-                src={service.image}
-                alt={service.title}
-                className="w-full h-48 object-cover"
-                loading="lazy"
-              />
-              <div className="p-6">
-              <div className="bg-primary/10 rounded-full p-4 w-fit mb-6 -mt-12 relative z-10 border-4 border-white">
+              <ResponsiveImage src={service.image} alt={service.title} className="w-full aspect-[3/2] object-cover" />
+              <div className="p-8">
+              <div className="bg-primary/10 rounded-full p-3 w-fit mb-5">
                 <service.icon className="text-primary" size={32} />
               </div>
               <h3 className="heading-3 mb-4">{service.title}</h3>
               <p className="text-gray-600 mb-6">{service.description}</p>
               <ul className="space-y-2">
-                {service.features.map((feature, idx) => (
+                {service.features.slice(0, 3).map((feature, idx) => (
                   <li key={idx} className="flex items-start gap-2 text-sm text-gray-700">
                     <span className="text-primary mt-1">✓</span>
                     <span>{feature}</span>
                   </li>
                 ))}
               </ul>
+              <Link to={['/services/skilled-nursing', '/services/personal-care', '/services/24-7-care', '/services/personal-care', '/services/respite-care', '/services/24-7-care'][index]} className="care-link inline-block mt-6">Explore {service.title.toLowerCase()}</Link>
               </div>
             </Card>
           ))}
         </div>
+        <p className="mt-8 text-gray-600">Overnight or 24-hour coverage does not automatically mean a nurse is present at all times or that a caregiver lives in the home. Care arrangements depend on assessment and staffing. For a medical emergency, call 911.</p>
+        <Link to="/resources/choosing-home-care-agency-houston" className="care-link inline-block mt-4">Questions to ask when choosing a home care agency</Link>
       </Section>
 
       <FAQ />

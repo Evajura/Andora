@@ -12,6 +12,7 @@ import {
   type CookiePreferences,
 } from '../lib/cookiePreferences';
 const globalPrivacyControlEnabled = () =>
+  typeof navigator !== 'undefined' &&
   (navigator as Navigator & { globalPrivacyControl?: boolean }).globalPrivacyControl === true;
 
 const makePreferences = (consentId: string, analytics: boolean, advertising: boolean): CookiePreferences => ({
@@ -76,7 +77,11 @@ export default function CookieConsent() {
       nextAnalytics,
       gpcEnabled ? false : nextAdvertising,
     );
-    window.localStorage.setItem(COOKIE_PREFERENCES_STORAGE_KEY, JSON.stringify(preferences));
+    try {
+      window.localStorage.setItem(COOKIE_PREFERENCES_STORAGE_KEY, JSON.stringify(preferences));
+    } catch {
+      // Respect the choice for this page even when browser storage is unavailable.
+    }
     setAnalytics(nextAnalytics);
     setAdvertising(preferences.advertising);
     setVisible(false);

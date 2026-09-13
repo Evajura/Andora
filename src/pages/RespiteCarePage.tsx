@@ -1,8 +1,10 @@
+import ResponsiveImage from "../components/ResponsiveImage";
 import { Users, CheckCircle, Shield, Clock, Heart, ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import Section from '../components/Section';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import CareScheduleExample from '../components/CareScheduleExample';
 
 export default function RespiteCarePage() {
   const navigate = useNavigate();
@@ -11,22 +13,22 @@ export default function RespiteCarePage() {
     {
       title: 'Temporary Caregiver Relief',
       description: 'Take the break you need — whether for a few hours, a weekend, or an extended period — while a qualified caregiver steps in seamlessly for your loved one.',
-      image: '/companionship.png',
+      image: '/care-scenes/temporary-relief.png',
     },
     {
       title: 'Planned Respite Scheduling',
       description: 'Regularly scheduled respite care for family caregivers in Houston so you can maintain your own health, work, and personal commitments without guilt.',
-      image: '/planned_respite_scheduling.png',
+      image: '/care-scenes/planned-respite.png',
     },
     {
       title: 'Emergency Respite Care',
-      description: 'When unexpected situations arise, our team can arrange urgent respite care to ensure your loved one is never without support.',
-      image: '/emergency_respite.png',
+      description: 'Call to discuss an unexpected gap in family caregiving. We will assess the request and confirm whether appropriate staffing is available. For a medical emergency, call 911.',
+      image: '/care-scenes/urgent-respite-call.png',
     },
     {
       title: 'Companion Care for Seniors',
       description: 'Companion care services for seniors that go beyond supervision — meaningful engagement, conversation, activities, and emotional support to brighten their day.',
-      image: '/livein_caregiver.png',
+      image: '/care-scenes/garden-companionship.png',
     },
   ];
 
@@ -69,7 +71,7 @@ export default function RespiteCarePage() {
   return (
     <>
       <SEO
-        title="Respite Care for Family Caregivers in Houston | Andora Home Care"
+        title="Houston Respite Care | Andora Private Duty Home Health"
         description="Respite care and family caregiver support for Houston-area families. Discuss schedules, support needs, and availability at (832) 679-3716."
         canonical="/services/respite-care"
       />
@@ -106,9 +108,9 @@ export default function RespiteCarePage() {
             </div>
 
             <div className="flex items-center justify-center md:py-4">
-              <img
-                src="/Layer 10.jpeg"
-                alt="Companion caregiver spending quality time with elderly client in Houston"
+              <ResponsiveImage
+                src="/care-scenes/respite-family-departure.png"
+                alt="Illustrative scene of a family leaving for a break while a caregiver stays with their loved one"
                 className="w-full max-h-[350px] md:max-h-[420px] object-cover rounded-2xl"
               />
             </div>
@@ -127,8 +129,8 @@ export default function RespiteCarePage() {
         <div className="grid md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <div key={index} className="group rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 bg-white">
-              <div className="relative h-56 overflow-hidden">
-                <img
+              <div className="relative aspect-[3/2] overflow-hidden">
+                <ResponsiveImage
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -170,18 +172,7 @@ export default function RespiteCarePage() {
             </div>
           </div>
           <div className="relative">
-            <div className="rounded-2xl overflow-hidden shadow-xl">
-              <img
-                src="/Layer 10.jpeg"
-                alt="Happy elderly person enjoying companionship care at home"
-                className="w-full h-[450px] object-cover"
-                loading="lazy"
-              />
-            </div>
-            <div className="absolute -bottom-6 -left-6 bg-primary text-white rounded-xl p-6 shadow-lg max-w-[240px] hidden md:block">
-              <p className="text-3xl font-bold mb-1">Flexible</p>
-              <p className="text-sm text-blue-100">Hours, days, or weeks — your choice</p>
-            </div>
+            <CareScheduleExample />
           </div>
         </div>
       </Section>

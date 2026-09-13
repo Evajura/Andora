@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { CalendarDays, ExternalLink } from 'lucide-react';
 import Button from './Button';
+import { isLocalPreview } from '../lib/localPreview';
 
 const CALENDLY_URL = 'https://calendly.com/privatecare-andorahealth/30min';
 const CALENDLY_SCRIPT = 'https://assets.calendly.com/assets/external/widget.js';
@@ -12,7 +13,7 @@ export default function CalendlyScheduler({ active, onActivate }: {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!active || !containerRef.current) return;
+    if (isLocalPreview || !active || !containerRef.current) return;
 
     const existingScript = document.querySelector<HTMLScriptElement>(`script[src="${CALENDLY_SCRIPT}"]`);
     if (existingScript) {
@@ -41,7 +42,13 @@ export default function CalendlyScheduler({ active, onActivate }: {
         </p>
       </div>
 
-      {!active ? (
+      {isLocalPreview ? (
+        <CardShell>
+          <p className="mb-4 text-gray-600">Appointment booking is paused for this local review. The published website connects this section to Andora’s Calendly calendar.</p>
+          <Button variant="primary" size="large" onClick={onActivate}>Preview Booking Step</Button>
+          {active && <p role="status" className="mt-4 text-sm text-primary">Booking step opened. No appointment has been created.</p>}
+        </CardShell>
+      ) : !active ? (
         <CardShell>
           <p className="mb-6 text-sm leading-6 text-gray-600">
             When you view available times, Calendly will load and process the information needed to schedule your appointment under its privacy policy.

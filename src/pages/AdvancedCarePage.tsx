@@ -1,3 +1,4 @@
+import ResponsiveImage from "../components/ResponsiveImage";
 import { Clock, CheckCircle, Shield, Brain, Users, ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import Section from '../components/Section';
@@ -10,23 +11,18 @@ export default function AdvancedCarePage() {
   const services = [
     {
       title: '24-Hour Nursing Care',
-      description: 'Round-the-clock RN and LVN care for seniors who need continuous medical supervision, monitoring, and support — day and night, 365 days a year.',
-      image: '/nursing_care.png',
+      description: 'Discuss awake overnight nursing or coordinated day-and-night clinical coverage with our team. The schedule and nursing level depend on assessment, the care plan, and available staffing.',
+      image: '/care-scenes/nighttime-nursing.png',
     },
     {
-      title: 'Dementia Home Care',
-      description: 'Specialized dementia home care services with structured routines, safety protocols, and compassionate engagement designed to reduce confusion and agitation.',
-      image: '/demetia.png',
-    },
-    {
-      title: "Alzheimer's Care",
-      description: "Dedicated in-home Alzheimer's care services with trained caregivers who understand disease progression, communication techniques, and behavioral management.",
-      image: '/alzheimer.png',
+      title: "Dementia & Alzheimer's Care",
+      description: 'Familiar routines, patient communication, and meaningful activities adapted to the person’s abilities and preferences. Daily support is planned around the individual; clinical concerns belong with the treating team.',
+      image: '/care-scenes/memory-support.png',
     },
     {
       title: 'Live-In Caregiver Services',
-      description: 'Live-in caregiver services in Houston for seniors who need a consistent, around-the-clock presence — providing security, companionship, and medical support.',
-      image: '/livein_caregiver.png',
+      description: 'Ask about available household and personal-care support, including groceries, meals, and familiar routines. Live-in arrangements require agreed rest periods and backup coverage; they are not the same as continuous awake nursing.',
+      image: '/care-scenes/groceries-doorstep.png',
     },
   ];
 
@@ -71,7 +67,7 @@ export default function AdvancedCarePage() {
   return (
     <>
       <SEO
-        title="24/7 Home Care & Dementia Care in Houston | Andora Home Care"
+        title="Houston 24/7 Care | Andora Private Duty Home Health"
         description="Around-the-clock home care and dementia support for Houston-area families. Discuss care needs and availability at (832) 679-3716."
         canonical="/services/24-7-care"
       />
@@ -108,9 +104,9 @@ export default function AdvancedCarePage() {
             </div>
 
             <div className="flex items-center justify-center md:py-4">
-              <img
-                src="/advanced_care.jpeg"
-                alt="Caregiver providing 24-hour home care support to elderly patient"
+              <ResponsiveImage
+                src="/care-scenes/evening-handoff.png"
+                alt="Illustrative scene of two female caregivers coordinating an evening handoff at home"
                 className="w-full max-h-[350px] md:max-h-[420px] object-cover rounded-2xl"
               />
             </div>
@@ -126,11 +122,11 @@ export default function AdvancedCarePage() {
             Our advanced care services combine clinical expertise with compassionate support to help seniors with complex conditions remain safely at home with dignity.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div key={index} className="group rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 bg-white">
-              <div className="relative h-56 overflow-hidden">
-                <img
+              <div className="relative aspect-[3/2] overflow-hidden">
+                <ResponsiveImage
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -173,9 +169,9 @@ export default function AdvancedCarePage() {
           </div>
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-xl">
-              <img
-                src="/advanced_care.jpeg"
-                alt="Professional caregiver providing specialized dementia care at home"
+              <ResponsiveImage
+                src="/care-scenes/specialized-support.png"
+                alt="Illustrative scene of a caregiver and an older adult reviewing a daily routine together"
                 className="w-full h-[450px] object-cover"
                 loading="lazy"
               />

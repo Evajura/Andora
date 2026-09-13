@@ -65,7 +65,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.andorahealth.com/resources/choosing-home-care-agency-houston</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.andorahealth.com/terms-and-conditions</loc>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.andorahealth.com/resources/overnight-vs-24-hour-home-care-houston</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.andorahealth.com/resources/respite-care-planning-houston</loc>
+    <priority>0.8</priority>
   </url>
 </urlset>

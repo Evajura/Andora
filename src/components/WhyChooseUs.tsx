@@ -1,3 +1,4 @@
+import ResponsiveImage from "./ResponsiveImage";
 import { CheckCircle2 } from 'lucide-react';
 import Section from './Section';
 
@@ -70,7 +71,7 @@ export default function WhyChooseUs() {
           </div>
 
           <div className="mt-8 rounded-xl overflow-hidden shadow-lg">
-            <img
+            <ResponsiveImage
               src="/advanced_care.jpeg"
               alt="Professional healthcare team ready to provide compassionate care"
               className="w-full h-64 object-cover"

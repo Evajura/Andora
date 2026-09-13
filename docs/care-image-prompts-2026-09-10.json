@@ -1,0 +1,62 @@
+{
+  "tool": "Built-in image_gen",
+  "basePrompt": "Use case: photorealistic-natural. Asset type: custom home-care website editorial photograph, landscape 3:2, high resolution and extremely detailed. Style: hyper-realistic candid documentary photography, human skin pores, age-appropriate wrinkles, individual facial structure, realistic hair strands, subtly creased scrub fabric, natural hands with five fingers and coherent anatomy. Tasteful real inhabited home, no generic staged stock-photo smile, no beauty filter, no CGI/plastic skin, no watermark, no extra people, no blue scrubs. Keep the important faces and action within the center 75 percent so image can be cropped for service cards. No slogans, badges, made-up staff names or readable text; scrubs plain and unbranded unless a genuine supplied logo is explicitly referenced. These are fictional illustrative scenes, not photos of actual Andora personnel. Scene: ",
+  "newScenes": [
+    {
+      "id": "evening-handoff",
+      "scene": "Evening handoff at a warm Houston suburban home. A Black female caregiver in plum scrubs hands a closed plain care notebook to a different Latina female caregiver in olive scrubs, both attentively conversing, while an older woman relaxes in a comfortable chair in the background. New distinct faces, natural candid expressions. Visible dusk through window. Communicate organized day-to-night support, not medical emergency."
+    },
+    {
+      "id": "specialized-support",
+      "scene": "Individualized home-care planning in a comfortable Houston home. A South Asian female caregiver in warm taupe scrubs sits at a round dining table with an older Black man in a cardigan, jointly looking at a simple illustrated daily routine sheet. Calm respectful engagement, everyday domestic setting, not examination equipment. Distinct adults, no reused models. Only picture icons on the sheet, no words."
+    },
+    {
+      "id": "recovery-assistance",
+      "scene": "Post-surgery support at home, no wound procedure. An East Asian female caregiver in burgundy scrubs helps a mature white woman seated upright on a sofa settle a supportive cushion behind her back. The client is wearing a pale cardigan and loose trousers, modestly fully dressed. Natural attentive interaction, home recovery atmosphere, neatly folded discharge folder on a side table, no visible medical text. Both look toward the cushion, not camera."
+    },
+    {
+      "id": "personal-hygiene",
+      "scene": "Dignified personal hygiene and daily routine. An older Black woman walks comfortably through her own bright hallway wearing a fully closed ankle-length ivory cotton robe, tied securely at the waist, non-slip house shoes. A clean towel is folded on a nearby shelf. She is fully covered, independent, candid and unposed, no caregiver necessary, not bathing, not hospital. Warm morning window light, lived-in home."
+    },
+    {
+      "id": "walker-support",
+      "scene": "Mobility assistance at home. An older Latino man stands upright using a correctly proportioned standard two-wheel walker on a clear flat floor, both hands naturally gripping its handles. A Black female caregiver in muted terracotta scrubs stands beside and slightly behind him attentively, available to assist, not pulling his arms. Both full bodies and all walker legs visible, secure closed shoes, realistic stable posture. Comfortable uncluttered home, no stairs, look toward walking path not camera."
+    },
+    {
+      "id": "garden-companionship",
+      "scene": "Lively companionship in a shaded Houston home garden. A Latina female caregiver age about 35 in forest green scrubs and an older white woman with short silver curls sit beside a raised planter, sharing a warm genuine laugh while looking at a small herb plant. Everyday candid joy, natural relaxed hands, modest attire, not posing at camera. Lush but realistic Texas backyard, soft morning light. Different faces from all other scenes."
+    },
+    {
+      "id": "nighttime-nursing",
+      "scene": "Quiet nighttime nursing in a private bedroom at home. A Black female nurse with short natural hair in warm aubergine scrubs sits attentively beside an older Asian woman resting comfortably in bed, checking a small fingertip pulse oximeter naturally placed on the patient finger. Soft bedside lamp and true darkness outside window make nighttime unmistakable. Calm alert nurse, not sleeping. Faces visible and realistic, safe clean setting, no blood, no alarms, no invented readings."
+    },
+    {
+      "id": "memory-support",
+      "scene": "Person-centered dementia and Alzheimer care in a familiar home. A white female caregiver with auburn tied-back hair wearing sage green scrubs sits side by side at a table with an older South Asian woman, gently looking together through a family-photo album. Their fingers point naturally to one photograph, patient engaged and respected, no distressed stereotype or diagnostic props. Simple uncluttered table, daylight, familiar framed photos in background. New faces."
+    },
+    {
+      "id": "groceries-doorstep",
+      "scene": "Live-in caregiver helping with household errands. A Black female caregiver with neat twists wearing warm rose scrubs opens the front door of a comfortable Houston house and bends slightly to pick up two paper grocery bags by their handles from the sheltered porch. Several neatly arranged grocery bags with vegetables and pantry items are beside the doorway but do not block the walking path. No patient or other person visible. Natural candid action, anatomically realistic hands, secure shoes, bright morning."
+    },
+    {
+      "id": "stroke-recovery",
+      "scene": "Support with everyday tasks after stroke at home. An older Black woman sits securely at a dining table using her left hand to grasp a large handled cup while a Filipina female caregiver in muted coral scrubs sits alongside, gently encouraging and helping stabilize a non-slip mat. Patient right forearm rests supported on a cushion on the table. Respectful candid daily-living support, not portrayed as physical therapy or a miraculous cure, no facial exaggeration. Clear visible purposeful activity, warm living space."
+    },
+    {
+      "id": "incision-dressing",
+      "scene": "Non-graphic clinical editorial close-up of home postoperative wound dressing. Only a small area of an adult abdomen is visible between clean modest drapes; no face, chest, genitalia or identifying marks. A short closed clean healing linear incision without bleeding or pus. Two realistic nitrile-gloved hands gently position a sterile non-adherent gauze dressing over the incision using the edges. Clean organized work area, no ruler or pressure-ulcer staging, no instructional labels. Detailed natural skin and gauze texture, calm medical website appropriate image, not gruesome."
+    },
+    {
+      "id": "respite-family-departure",
+      "scene": "Respite care that lets family take a break. Seen from the front garden of a Houston home: a middle-aged couple with a small rolling weekend suitcase head down the walkway and wave back. At the open front door, an older white woman seated comfortably in a stable chair and her female Black caregiver in warm maroon scrubs smile and wave goodbye together. Four people total. Candid natural gestures, safe level entrance, warm daylight. Story immediately readable: loved one stays cared for at home while family travels. Not airport or residential facility."
+    },
+    {
+      "id": "temporary-relief",
+      "scene": "Entirely new respite-care scene inside a home. An older Latino woman and a female South Asian caregiver in muted mauve scrubs sit side by side assembling a large-piece jigsaw puzzle at a dining table, absorbed in the activity. In the soft-focus background an adult daughter in everyday clothing picks up a tote ready to leave for personal time. New faces, distinct composition, nobody looking at camera, warm candid domestic photography, no male caregivers."
+    },
+    {
+      "id": "urgent-respite-call",
+      "scene": "A tired middle-aged woman in ordinary rust-colored clothing makes a phone call for last-minute family caregiver support in her home kitchen. She looks worried and overwhelmed but composed, one hand holds the phone naturally to her ear, the other rests near a scattered calendar, half-folded laundry and household papers. An adult partner in background quietly helps tidy. No ill patient visible, no medical emergency or injury, no melodramatic screaming. Natural facial emotion, everyday domestic clutter, documentary realism."
+    }
+  ]
+}

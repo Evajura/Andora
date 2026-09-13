@@ -1,0 +1,21 @@
+{
+  "tool": "Built-in image_gen",
+  "edits": [
+    {
+      "id": "post-surgery-visit",
+      "prompt": "Use case: precise-object-edit. Image 1 is the existing post-surgery home visit scene to edit. Image 2 is the user's genuine Andora logo, a supporting insert reference only. Keep the older woman, the home, the shoulder dressing, camera viewpoint and the care activity. Replace the male nurse entirely with a distinct adult Black female nurse with natural tied-back hair; change scrubs to warm sage green. Improve the interaction so she looks attentively at the covered shoulder dressing and uses anatomically plausible gloved hands. Keep wound fully covered; non-graphic. Replace ALL made-up branding on scrub, name badges and supplies: no personal names, no RN badge claims. If any branding is visible, use only the supplied real logo as a modest dark embroidery or small ivory logo patch on upper scrub pocket, faithful shape and spelling; supply tray plain unbranded. Hyper-realistic candid photography, real skin pores and fine wrinkles, cloth weave and believable light, not airbrushed or staged stock aesthetics. Remove decorative sparkle/watermark-like graphic at lower right. Landscape output, preserve original setting and care action.",
+      "paths": [
+        "/Users/eva/Documents/Codex/2026-09-05/ho/work/andora-seo/public/post_surgical.png",
+        "/Users/eva/Documents/Codex/2026-09-05/ho/work/andora-seo/public/Andora_BlackLogo_Variant_PNG@14x.png"
+      ]
+    },
+    {
+      "id": "planned-respite",
+      "prompt": "Use case: precise-object-edit. Image 1 is the planned respite scheduling photo to edit. Image 2 is the user's genuine Andora logo, supporting insert reference only. Preserve the two people, kitchen setting, tabletop calendar, cat, composition and daylight. Change ONLY the caregivers navy/blue scrubs to olive green, remove fake personal name and credential text, replace inaccurate invented logo with supplied true Andora logo on a small ivory patch on upper scrub pocket. Remove invented branding from notebook/tablet; no other brand names. Most importantly, change BOTH faces, head angles and eye gaze so BOTH people are clearly looking DOWN AT THE SAME CALENDAR on the table, pointing to a day together naturally rather than looking at each other or into empty space. Keep coherent five-finger hands and calendar spatial perspective. Use a simple calendar grid without illegible paragraphs, no promised service start dates. Hyper-realistic photograph, natural skin texture and age lines, no beauty filter. Landscape, not stock-photo posing.",
+      "paths": [
+        "/Users/eva/Documents/Codex/2026-09-05/ho/work/andora-seo/public/planned_respite_scheduling.png",
+        "/Users/eva/Documents/Codex/2026-09-05/ho/work/andora-seo/public/Andora_BlackLogo_Variant_PNG@14x.png"
+      ]
+    }
+  ]
+}

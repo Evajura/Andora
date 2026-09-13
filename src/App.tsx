@@ -20,15 +20,22 @@ import ResourceArticlePage from './pages/ResourceArticlePage';
 import ServiceAreasPage from './pages/ServiceAreasPage';
 import NotFoundPage from './pages/NotFoundPage';
 import CookieConsent from './components/CookieConsent';
+import { isLocalPreview } from './lib/localPreview';
 
-function App() {
+export function Site() {
   return (
-    <Router>
+    <>
       <ScrollToTop />
       <div className="min-h-screen bg-white">
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[110] focus:rounded-lg focus:bg-white focus:p-4 focus:text-primary">Skip to main content</a>
         <UtilityBar />
         <Header />
-        <main>
+        {isLocalPreview && (
+          <aside className="border-b border-blue-200 bg-blue-50 px-4 py-3 text-center text-sm text-blue-900">
+            Local review on this Mac. Contact form submissions are simulated; appointment booking is paused.
+          </aside>
+        )}
+        <main id="main-content" tabIndex={-1}>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/services" element={<ServicesPage />} />
@@ -52,8 +59,12 @@ function App() {
         <FloatingCallButton />
         <CookieConsent />
       </div>
-    </Router>
+    </>
   );
+}
+
+function App() {
+  return <Router><Site /></Router>;
 }
 
 export default App;
