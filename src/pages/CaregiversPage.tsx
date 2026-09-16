@@ -1,5 +1,4 @@
 import ResponsiveImage from "../components/ResponsiveImage";
-import { isLocalPreview } from '../lib/localPreview';
 import { DollarSign, CalendarClock, TrendingUp, Heart, CheckCircle } from 'lucide-react';
 import Section from '../components/Section';
 import Button from '../components/Button';
@@ -106,22 +105,41 @@ export default function CaregiversPage() {
         </div>
       </Section>
 
-      {/* Current Openings - TelescopeHR Embed */}
+      {/* Current Openings */}
       <Section background="light" id="current-openings">
         <div className="text-center mb-10">
           <h2 className="heading-2 mb-4">Current Openings</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Browse our open positions below and apply directly. We're always looking for talented, compassionate healthcare professionals to join the Andora family.
+            We welcome interest from compassionate home care professionals in Greater Houston. To be considered, send your resume and a short introduction directly to our team.
           </p>
         </div>
-        <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-lg border border-gray-200 bg-white">
-          {isLocalPreview ? <p className="p-10 text-center text-gray-600">Job applications are paused in this local preview. No application information will be submitted.</p> : <iframe
-            src="https://telescopehr.com/onboarding/job-list/wdNO94bIODgFmIMMBKrzyS0H2GIphE"
-            title="Andora Private Duty Home Health Job Openings"
-            className="w-full border-0"
-            style={{ minHeight: '700px' }}
-            loading="lazy"
-          />}
+        <div className="max-w-4xl mx-auto rounded-2xl border border-gray-200 bg-white p-8 shadow-lg md:p-10">
+          <div className="grid gap-8 md:grid-cols-2">
+            <div>
+              <h3 className="mb-3 text-xl font-bold text-primary">Apply by email</h3>
+              <p className="mb-5 leading-relaxed text-gray-600">
+                Email your name, resume, certifications or licensure, preferred position, and general availability to our recruiting team.
+              </p>
+              <a
+                href="mailto:Privatecare@andorahealth.com?subject=Andora%20Career%20Inquiry"
+                className="inline-flex rounded-lg bg-primary px-5 py-3 font-semibold text-white transition-smooth hover:bg-primary-dark"
+              >
+                Email Privatecare@andorahealth.com
+              </a>
+            </div>
+            <div>
+              <h3 className="mb-3 text-xl font-bold text-primary">Or text our team</h3>
+              <p className="mb-5 leading-relaxed text-gray-600">
+                Text your name, preferred position, and a note that you will send a resume to (832) 679-3716. Please do not text private health information.
+              </p>
+              <a
+                href="sms:+18326793716?body=Hello%2C%20my%20name%20is%20%5Byour%20name%5D.%20I%20am%20interested%20in%20a%20%5Bpreferred%20position%5D%20role%20with%20Andora.%20I%20will%20send%20my%20resume%20by%20email."
+                className="inline-flex rounded-lg border-2 border-primary px-5 py-3 font-semibold text-primary transition-smooth hover:bg-primary hover:text-white"
+              >
+                Text (832) 679-3716
+              </a>
+            </div>
+          </div>
         </div>
       </Section>
 
@@ -152,20 +170,17 @@ export default function CaregiversPage() {
           <div className="bg-gradient-to-br from-primary to-blue-700 text-white rounded-2xl p-10">
             <h3 className="text-2xl font-bold mb-6">Ready to Apply?</h3>
             <p className="text-blue-100 mb-4 leading-relaxed">
-              Take the first step toward a rewarding career in home healthcare. Browse our current openings above or send us your resume directly.
+              Take the first step toward a rewarding career in home healthcare. Send us your resume directly and tell us which role you are interested in.
             </p>
             <p className="text-blue-100 mb-8 text-sm">
-              Questions? Email us at <a href="mailto:Privatecare@andorahealth.com" className="text-white underline">Privatecare@andorahealth.com</a> or call <a href="tel:+18326793716" className="text-white underline">(832) 679-3716</a>.
+              Email <a href="mailto:Privatecare@andorahealth.com" className="text-white underline">Privatecare@andorahealth.com</a> with your name, resume, credentials, preferred position, and availability. You may also text <a href="sms:+18326793716" className="text-white underline">(832) 679-3716</a> to introduce yourself.
             </p>
-            <Button
-              variant="cta"
-              size="large"
-              fullWidth
-              onClick={() => window.open('https://telescopehr.com/onboarding/job-list/wdNO94bIODgFmIMMBKrzyS0H2GIphE', '_blank')}
-              disabled={isLocalPreview}
+            <a
+              href="mailto:Privatecare@andorahealth.com?subject=Andora%20Career%20Inquiry"
+              className="flex min-h-[56px] w-full items-center justify-center rounded-lg bg-cta px-8 py-4 text-lg font-semibold text-white shadow-lg transition-smooth hover:bg-cta-dark hover:shadow-xl"
             >
-              Apply Now
-            </Button>
+              Email Your Resume
+            </a>
           </div>
         </div>
       </Section>

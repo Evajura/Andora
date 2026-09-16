@@ -111,7 +111,7 @@ export default function ServicesPage() {
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="heading-2 text-white mb-6">Not Sure Which Service Is Right?</h2>
           <p className="text-xl text-blue-100 mb-8">
-            Understanding the differences between home care and home health care can be confusing. Contact us today for a free consultation — we'll help you determine the right type and level of care, answer your top questions, and create a personalized care plan.
+            Understanding the differences between home care and home health care can be confusing. Contact us for a care conversation. We can discuss the type and level of support you are considering, answer practical questions, and explain the next steps.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
