@@ -5,20 +5,20 @@ const steps = [
   {
     icon: Phone,
     number: '01',
-    title: 'Free Consultation',
-    description: 'Speak with our care specialists to discuss your needs, concerns, and preferences. Available 24/7 for your convenience.',
+    title: 'Start with a Care Conversation',
+    description: 'Tell us about the support you are considering, your concerns, preferences, and location. We will discuss current availability and next steps.',
   },
   {
     icon: FileText,
     number: '02',
     title: 'Personalized Care Plan',
-    description: 'We create a customized care plan and match you with the perfect caregiver based on skills, personality, and schedule.',
+    description: 'When Andora is the right fit, the team develops a plan around the client’s needs, routines, appropriate skills, and schedule.',
   },
   {
     icon: HeartHandshake,
     number: '03',
     title: 'Ongoing Support',
-    description: 'Regular check-ins, care plan adjustments, and 24/7 access to nursing supervisors ensure continuous quality care.',
+    description: 'As needs evolve, the team can review the plan and coordinate updates within the agreed scope of care.',
   },
 ];
 

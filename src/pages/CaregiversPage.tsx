@@ -1,3 +1,5 @@
+import ResponsiveImage from "../components/ResponsiveImage";
+import { isLocalPreview } from '../lib/localPreview';
 import { DollarSign, CalendarClock, TrendingUp, Heart, CheckCircle } from 'lucide-react';
 import Section from '../components/Section';
 import Button from '../components/Button';
@@ -32,8 +34,8 @@ export default function CaregiversPage() {
   return (
     <>
       <SEO
-        title="Careers at Andora Home Care | Join Our Team in Houston"
-        description="Join Andora Home Care in Houston. We're hiring compassionate RNs, LVNs, CNAs, and home health aides. Competitive pay, flexible scheduling, and career growth. Apply today."
+        title="Houston Careers | Andora Private Duty Home Health"
+        description="Explore nursing and caregiver opportunities with Andora Private Duty Home Health in Greater Houston. View current openings and application details."
         canonical="/caregivers"
       />
 
@@ -41,7 +43,7 @@ export default function CaregiversPage() {
       <Section className="pt-24 pb-12 bg-gradient-to-br from-blue-50 to-white">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="heading-1 mb-6">
-            Join Our Compassionate Team at Andora Home Care
+            Join Our Team at Andora Private Duty Home Health
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed">
             Make a meaningful difference in people's lives. We're looking for compassionate, dedicated home care professionals to join our team in Houston, TX and surrounding areas.
@@ -53,9 +55,9 @@ export default function CaregiversPage() {
       <Section>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="heading-2 mb-4">Why Choose a Career with Andora Home Care?</h2>
+            <h2 className="heading-2 mb-4">Why Choose a Career with Andora?</h2>
             <p className="text-gray-600 leading-relaxed mb-8">
-              At Andora Home Care, we value our caregivers and recognize the essential role they play in our clients' lives. We're committed to creating a supportive, rewarding work environment where you can grow professionally while making a meaningful impact in the Houston, TX community and beyond.
+              At Andora Private Duty Home Health, we value our caregivers and recognize the essential role they play in our clients' lives. We're committed to creating a supportive, rewarding work environment where you can grow professionally while making a meaningful impact in the Houston, TX community and beyond.
             </p>
             <div className="space-y-6">
               {perks.map((perk, index) => (
@@ -74,9 +76,9 @@ export default function CaregiversPage() {
 
           {/* Image Card */}
           <div className="relative rounded-2xl overflow-hidden shadow-xl">
-            <img
+            <ResponsiveImage
               src="/IMG_2598.JPG"
-              alt="Andora Home Care professionals providing compassionate care"
+              alt="Caregiving support at home"
               className="w-full h-[480px] object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent" />
@@ -113,13 +115,13 @@ export default function CaregiversPage() {
           </p>
         </div>
         <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-lg border border-gray-200 bg-white">
-          <iframe
+          {isLocalPreview ? <p className="p-10 text-center text-gray-600">Job applications are paused in this local preview. No application information will be submitted.</p> : <iframe
             src="https://telescopehr.com/onboarding/job-list/wdNO94bIODgFmIMMBKrzyS0H2GIphE"
-            title="Andora Home Care Job Openings"
+            title="Andora Private Duty Home Health Job Openings"
             className="w-full border-0"
             style={{ minHeight: '700px' }}
             loading="lazy"
-          />
+          />}
         </div>
       </Section>
 
@@ -153,13 +155,14 @@ export default function CaregiversPage() {
               Take the first step toward a rewarding career in home healthcare. Browse our current openings above or send us your resume directly.
             </p>
             <p className="text-blue-100 mb-8 text-sm">
-              Questions? Email us at <a href="mailto:Privatecare@andorahealth.com" className="text-white underline">Privatecare@andorahealth.com</a> or call <a href="tel:+13462023538" className="text-white underline">(346) 202-3538</a>.
+              Questions? Email us at <a href="mailto:Privatecare@andorahealth.com" className="text-white underline">Privatecare@andorahealth.com</a> or call <a href="tel:+18326793716" className="text-white underline">(832) 679-3716</a>.
             </p>
             <Button
               variant="cta"
               size="large"
               fullWidth
               onClick={() => window.open('https://telescopehr.com/onboarding/job-list/wdNO94bIODgFmIMMBKrzyS0H2GIphE', '_blank')}
+              disabled={isLocalPreview}
             >
               Apply Now
             </Button>

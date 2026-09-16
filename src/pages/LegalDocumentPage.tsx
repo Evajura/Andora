@@ -27,10 +27,14 @@ const documents = {
 
 function extractDocumentBody(html: string) {
   const wrap = html.match(/<div class="wrap">([\s\S]*?)<\/div>\s*<\/body>/i)?.[1] ?? html;
-
+  let headingCount = 0;
   return wrap
     .replace(/<div class="masthead">[\s\S]*?<\/div>/i, '')
-    .replace(/<footer>[\s\S]*?<\/footer>/i, '');
+    .replace(/<footer>[\s\S]*?<\/footer>/i, '')
+    .replace(/<h1\b([^>]*)>([\s\S]*?)<\/h1>/gi, (heading, attributes: string, text: string) => {
+      headingCount += 1;
+      return headingCount === 1 ? heading : `<h2${attributes}>${text}</h2>`;
+    });
 }
 
 export default function LegalDocumentPage({ document }: LegalDocumentPageProps) {

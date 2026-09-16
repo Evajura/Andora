@@ -1,3 +1,4 @@
+import ResponsiveImage from "../components/ResponsiveImage";
 import { Activity, CheckCircle, Shield, Clock, Heart, Stethoscope, ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import Section from '../components/Section';
@@ -11,17 +12,17 @@ export default function PostHospitalPage() {
     {
       title: 'Post-Surgery Home Care',
       description: 'Comprehensive post-surgery home care assistance in Houston including wound monitoring, pain management, medication administration, and mobility support for a safe recovery.',
-      image: '/post_surgical.png',
+      image: '/care-scenes/post-surgery-visit.png',
     },
     {
       title: 'Stroke Recovery Care',
-      description: 'Home care services for stroke recovery in Houston — speech support, mobility rehabilitation, daily living assistance, and cognitive exercises to maximize recovery outcomes.',
-      image: '/mobility.png',
+      description: 'Patient support with daily routines after a stroke, following the individual care plan and instructions from the treating team. Caregiver assistance complements, rather than replaces, prescribed rehabilitation.',
+      image: '/care-scenes/stroke-recovery.png',
     },
     {
       title: 'Wound Care & Monitoring',
       description: 'Professional wound assessment, dressing changes, infection monitoring, and healing tracking by licensed nurses to prevent complications and hospital readmission.',
-      image: '/wound_care.png',
+      image: '/care-scenes/incision-dressing.png',
     },
     {
       title: 'Medication Management',
@@ -69,8 +70,8 @@ export default function PostHospitalPage() {
   return (
     <>
       <SEO
-        title="Post-Hospital & Surgery Home Care in Houston | Andora Home Care"
-        description="Post-surgery home care assistance in Houston. Home care services for stroke recovery, wound care, medication management, and rehabilitation. Licensed home care agency helping seniors recover safely at home. Call (346) 202-3538."
+        title="Post-Hospital Care | Andora Private Duty Home Health"
+        description="Post-hospital and post-surgery home care support for Houston-area families. Discuss recovery support, care coordination, and availability at (832) 679-3716."
         canonical="/services/post-hospital-recovery"
       />
 
@@ -106,7 +107,7 @@ export default function PostHospitalPage() {
             </div>
 
             <div className="flex items-center justify-center md:py-4">
-              <img
+              <ResponsiveImage
                 src="/Layer 8.png"
                 alt="Nurse helping patient with post-hospital recovery at home in Houston"
                 className="w-full max-h-[350px] md:max-h-[420px] object-cover rounded-2xl"
@@ -127,8 +128,8 @@ export default function PostHospitalPage() {
         <div className="grid md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <div key={index} className="group rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 bg-white">
-              <div className="relative h-56 overflow-hidden">
-                <img
+              <div className="relative aspect-[3/2] overflow-hidden">
+                <ResponsiveImage
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -171,7 +172,7 @@ export default function PostHospitalPage() {
           </div>
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-xl">
-              <img
+              <ResponsiveImage
                 src="/Layer 8.png"
                 alt="Licensed nurse monitoring patient recovery at home"
                 className="w-full h-[450px] object-cover"
@@ -269,9 +270,9 @@ export default function PostHospitalPage() {
               variant="outline"
               size="large"
               className="border-white text-white hover:bg-white hover:text-primary"
-              onClick={() => window.location.href = 'tel:+13462023538'}
+              onClick={() => window.location.href = 'tel:+18326793716'}
             >
-              Call (346) 202-3538
+              Call (832) 679-3716
             </Button>
           </div>
         </div>

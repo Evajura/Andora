@@ -1,3 +1,4 @@
+import ResponsiveImage from "./ResponsiveImage";
 import { useState } from 'react';
 import { Star, ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 import Section from './Section';
@@ -51,7 +52,7 @@ export default function Testimonials() {
 
           <div className="relative z-10">
             <div className="flex items-center gap-4 mb-6">
-              <img
+              <ResponsiveImage
                 src={current.image}
                 alt={current.name}
                 className="w-16 h-16 rounded-full object-cover border-4 border-white shadow-md"

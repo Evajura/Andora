@@ -6,12 +6,12 @@ export default function UtilityBar() {
       <div className="container-custom">
         <div className="flex flex-wrap justify-center md:justify-between items-center gap-4 text-sm md:text-base">
           <a
-            href="tel:+13462023538"
+            href="tel:+18326793716"
             className="flex items-center gap-2 hover:text-secondary-light transition-smooth"
-            aria-label="Call us at 346-202-3538"
+            aria-label="Call us at 832-679-3716"
           >
             <Phone size={18} />
-            <span className="font-semibold">(346) 202-3538</span>
+            <span className="font-semibold">(832) 679-3716</span>
           </a>
 
           <div className="flex items-center gap-2">

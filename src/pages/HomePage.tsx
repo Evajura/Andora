@@ -1,4 +1,5 @@
 import Hero from '../components/Hero';
+import FamilyGuides from '../components/FamilyGuides';
 import Services from '../components/Services';
 import WhyChooseUs from '../components/WhyChooseUs';
 import CareProcess from '../components/CareProcess';
@@ -12,8 +13,8 @@ export default function HomePage() {
   return (
     <>
       <SEO
-        title="Andora Home Care | Private Duty Nursing in Houston, TX"
-        description="Licensed private duty nursing and 24-hour home care in Houston. Professional, compassionate caregivers providing skilled nursing, companion care, and personal care services. Call (346) 202-3538."
+        title="Andora Private Duty Home Health | Houston, TX"
+        description="Explore private-duty nursing, personal care, and 24-hour support in Houston and Memorial. Call Andora at (832) 679-3716 to discuss your family's needs."
         canonical="/"
       />
       <LocalBusinessSchema />
@@ -23,6 +24,7 @@ export default function HomePage() {
       <WhyChooseUs />
       <CareProcess />
       <FAQ showAllLink />
+      <FamilyGuides />
       <CoverageArea />
       <FinalCTA />
     </>

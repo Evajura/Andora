@@ -19,7 +19,7 @@ export default function FloatingCallButton() {
 
   return (
     <a
-      href="tel:+13462023538"
+      href="tel:+18326793716"
       className={`fixed bottom-6 right-6 z-50 bg-cta text-white p-4 rounded-full shadow-2xl hover:bg-cta-dark transition-smooth md:hidden ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16 pointer-events-none'
       }`}

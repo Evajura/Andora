@@ -1,4 +1,5 @@
 import { BookOpen, FileText, Video, HelpCircle, Download, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Section from '../components/Section';
 import Card from '../components/Card';
 import SEO from '../components/SEO';
@@ -7,34 +8,34 @@ import { FAQPageSchema } from '../components/StructuredData';
 export default function ResourcesPage() {
   const guides = [
     {
-      title: 'What Is Home Care for Elderly?',
-      description: 'A comprehensive guide to understanding the differences between home care and home health care, types of services available, and what to expect.',
-      category: 'Getting Started'
+      title: 'Overnight vs. 24-Hour Home Care in Houston',
+      description: 'Compare awake overnight coverage, rotating shifts, live-in arrangements, and the questions to ask before requesting a quote.',
+      category: 'Planning Coverage', slug: 'overnight-vs-24-hour-home-care-houston'
+    },
+    {
+      title: 'Respite Care: A Family Planning Checklist',
+      description: 'Plan a break with clear coverage hours, a practical handoff, household routines, and backup contacts.',
+      category: 'Family Caregiving', slug: 'respite-care-planning-houston'
+    },
+    {
+      title: 'Choosing a Home Care Agency in Houston',
+      description: 'Ten questions to compare staffing, overnight coverage, communication, and costs before choosing care.',
+      category: 'Comparing Care', slug: 'choosing-home-care-agency-houston'
+    },
+    {
+      title: 'Home Care vs. Home Health Care',
+      description: 'Understand everyday personal care, skilled nursing, and the questions to ask when deciding what support fits.',
+      category: 'Getting Started', slug: 'home-care-vs-home-health'
     },
     {
       title: 'Signs Your Loved One Needs Home Care',
       description: 'Learn to recognize the key signs that indicate it may be time to consider in-home care services for your aging parent or family member.',
-      category: 'Getting Started'
+      category: 'Getting Started', slug: 'signs-your-loved-one-needs-home-care'
     },
     {
       title: 'How to Pay for Home Care Services',
       description: 'Understanding costs of home care services for seniors, insurance options, Medicare coverage, and financial planning for long-term care.',
-      category: 'Financial Planning'
-    },
-    {
-      title: 'Caring for Someone with Dementia',
-      description: 'Expert tips on common challenges in senior caregiving for dementia and Alzheimer\'s — including safety, communication, and emotional support.',
-      category: 'Caregiving Tips'
-    },
-    {
-      title: 'Best Practices for Hiring a Home Care Provider',
-      description: 'Top questions to ask a home care provider, how to evaluate a home care agency, and what to look for in quality caregivers.',
-      category: 'Choosing Care'
-    },
-    {
-      title: 'Fall Prevention Guide',
-      description: 'Creating a safe home environment and reducing fall risks for elderly or mobility-impaired individuals living at home.',
-      category: 'Health & Safety'
+      category: 'Financial Planning', slug: 'how-to-pay-for-home-care'
     }
   ];
 
@@ -78,11 +79,11 @@ export default function ResourcesPage() {
     },
     {
       question: 'How quickly can care start?',
-      answer: 'We understand that care needs can be urgent. In many cases, we can arrange for care to begin within 24-48 hours of your initial consultation.'
+      answer: 'Start dates depend on the care needs, location, assessment, and available staffing. Call (832) 679-3716 with your preferred start date so we can confirm what is currently possible.'
     },
     {
       question: 'Can I choose my caregiver?',
-      answer: 'Yes! We carefully match caregivers based on your needs, preferences, and personality. If you\'re not satisfied with the match, we\'ll make adjustments at no charge.'
+      answer: 'Tell our team about your routines and preferences during the care conversation. Ask how matching works, who is available for your schedule, and what happens if a match needs to change.'
     },
     {
       question: 'What if my needs change over time?',
@@ -103,8 +104,8 @@ export default function ResourcesPage() {
     },
     {
       title: 'CDC Infection Control Resources',
-      description: 'Home healthcare infection prevention and control guidelines',
-      url: 'https://www.cdc.gov/infection-control/hcp/home-care/index.html'
+      description: 'An introduction to infection prevention and control',
+      url: 'https://www.cdc.gov/infection-control/about/index.html'
     },
     {
       title: 'AARP Caregiving Resource Center',
@@ -119,15 +120,15 @@ export default function ResourcesPage() {
     {
       title: 'National Institute on Aging',
       description: 'Free publications on aging, caregiving, and health conditions',
-      url: 'https://www.nia.nih.gov/health/publications'
+      url: 'https://www.nia.nih.gov/health'
     }
   ];
 
   return (
     <>
       <SEO
-        title="Home Care Resources & FAQs | Andora Home Care"
-        description="Learn what is home care for elderly, how to pay for home care services, signs your loved one needs home care, and more. Free guides, FAQs, and resources from Houston's trusted home care agency."
+        title="Family Guides | Andora Private Duty Home Health"
+        description="Compare home care options, plan costs, and prepare questions for an agency. Practical guides for Houston families from Andora Private Duty Home Health."
         canonical="/resources"
       />
       <FAQPageSchema faqs={faqs} />
@@ -137,7 +138,7 @@ export default function ResourcesPage() {
         <div className="text-center max-w-3xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl p-8">
           <h1 className="heading-1 mb-6">Resources & Support</h1>
           <p className="text-xl text-gray-600 leading-relaxed">
-            What is home care for elderly? How do you pay for home care services? Access helpful guides covering costs of home care services for seniors, signs your loved one needs home care, and best practices for hiring a home care provider.
+            Clear answers for the decisions families face: what kind of support is needed, how to compare agencies, and what to ask about costs. Start with a guide, then talk with our team about your situation.
           </p>
         </div>
       </Section>
@@ -149,16 +150,18 @@ export default function ResourcesPage() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {guides.map((guide, index) => (
-            <Card key={index} className="hover:shadow-xl transition-smooth cursor-pointer">
+            <Link key={index} to={`/resources/${guide.slug}`} className="block">
+            <Card className="h-full hover:shadow-xl transition-smooth">
               <div className="text-sm text-primary font-semibold mb-2">
                 {guide.category}
               </div>
               <h3 className="font-bold text-lg mb-3">{guide.title}</h3>
               <p className="text-gray-600 text-sm mb-4">{guide.description}</p>
               <div className="flex items-center gap-2 text-primary font-medium text-sm">
-                Read More <ExternalLink size={16} />
+                Read guide <ExternalLink size={16} />
               </div>
             </Card>
+            </Link>
           ))}
         </div>
       </Section>
@@ -234,7 +237,7 @@ export default function ResourcesPage() {
         </div>
         <div className="text-center mt-8">
           <p className="text-blue-100">
-            All resources are provided free of charge to help support you and your family.
+            Andora’s family guides are free to read. External resources have their own terms; some training providers charge fees.
           </p>
         </div>
       </Section>

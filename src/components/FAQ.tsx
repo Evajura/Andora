@@ -6,20 +6,20 @@ import Button from './Button';
 
 export const faqs = [
   {
-    question: 'How do I know if I need home healthcare?',
-    answer: 'Home healthcare is ideal if you or a loved one needs medical care, assistance with daily activities, or companionship but prefers to remain at home. Our team can assess your needs during a free consultation.'
+    question: 'How do I know what kind of support to ask about?',
+    answer: 'Start with the day-to-day needs: personal routines, mobility, companionship, safety concerns, recovery support, or clinical care. A conversation with the care team can help clarify whether Andora’s licensed services fit the situation. This information is not medical advice.'
   },
   {
-    question: 'How quickly can care start?',
-    answer: 'We understand that care needs can be urgent. In many cases, we can arrange for care to begin within 24-48 hours of your initial consultation.'
+    question: 'How soon can care begin?',
+    answer: 'Timing depends on the client’s needs, the location, care-plan requirements, and current staff availability. Contact Andora directly to discuss the earliest appropriate start date.'
   },
   {
-    question: 'Can I choose my caregiver?',
-    answer: 'Yes! We carefully match caregivers based on your needs, preferences, and personality. If you\'re not satisfied with the match, we\'ll make adjustments at no charge.'
+    question: 'Can my family share caregiver preferences?',
+    answer: 'Yes. Families can share preferences, schedules, routines, and the skills the client needs. The team will discuss matching and availability during the planning process.'
   },
   {
-    question: 'What if my needs change over time?',
-    answer: 'Care plans are flexible and can be adjusted as needs evolve. We regularly reassess and update care plans to ensure they continue to meet your changing requirements.'
+    question: 'How is private-duty care paid for?',
+    answer: 'Payment arrangements and benefits vary by family and service. Before beginning care, ask which payment methods are accepted, whether long-term-care benefits may apply, and what documentation a benefit provider may require.'
   }
 ];
 

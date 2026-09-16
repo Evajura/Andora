@@ -1,7 +1,9 @@
+import ResponsiveImage from "./ResponsiveImage";
 import { useState, useEffect, useRef } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Button from './Button';
+import { brand } from '../lib/brand';
 
 const serviceLinks = [
   { label: 'Skilled Nursing Care', href: '/services/skilled-nursing' },
@@ -17,6 +19,25 @@ export default function Header() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+    setIsServicesOpen(false);
+    setIsMobileServicesOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsMobileMenuOpen(false);
+        setIsServicesOpen(false);
+        setIsMobileServicesOpen(false);
+      }
+    };
+    document.addEventListener('keydown', closeOnEscape);
+    return () => document.removeEventListener('keydown', closeOnEscape);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -52,11 +73,13 @@ export default function Header() {
     >
       <nav className="container-custom py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3">
-            <img
-              src="/Andora_BlackLogo_Variant_PNG@14x.png"
-              alt="Andora"
-              className="h-12 md:h-14 w-auto"
+          <Link to="/" className="flex items-center gap-3" aria-label={`${brand.name} - home`}>
+            <ResponsiveImage
+              src={brand.logo}
+              alt={brand.name}
+              loading="eager"
+              sizes="200px"
+              className="h-16 md:h-20 w-auto"
             />
           </Link>
 
@@ -123,7 +146,7 @@ export default function Header() {
             <Button
               variant="cta"
               size="medium"
-              onClick={() => window.location.href = 'tel:+13462023538'}
+              onClick={() => window.location.href = 'tel:+18326793716'}
               className="hidden md:block"
             >
               Call Now
@@ -133,6 +156,8 @@ export default function Header() {
               className="lg:hidden p-2"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Toggle mobile menu"
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-navigation"
             >
               {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
@@ -140,7 +165,7 @@ export default function Header() {
         </div>
 
         {isMobileMenuOpen && (
-          <div className="lg:hidden mt-4 py-4 border-t border-gray-200">
+          <div id="mobile-navigation" className="lg:hidden mt-4 py-4 border-t border-gray-200">
             <div className="flex flex-col gap-4">
               <Link
                 to="/"
@@ -198,7 +223,7 @@ export default function Header() {
               <Button
                 variant="cta"
                 fullWidth
-                onClick={() => window.location.href = 'tel:+13462023538'}
+                onClick={() => window.location.href = 'tel:+18326793716'}
               >
                 Call Now
               </Button>

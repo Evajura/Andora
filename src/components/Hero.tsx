@@ -1,16 +1,14 @@
 import { Shield, Clock, Award, CheckCircle } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
-import Button from './Button';
+import { Link } from 'react-router-dom';
+import ResponsiveImage from './ResponsiveImage';
 
 export default function Hero() {
-  const navigate = useNavigate();
-
   return (
     <section
       id="home"
       className="relative bg-cover bg-no-repeat py-20 md:py-32"
-      style={{ backgroundImage: "url('/hero-bg.jpeg')", backgroundPosition: 'center 20%' }}
     >
+      <ResponsiveImage src="/hero-bg.jpeg" alt="" aria-hidden="true" loading="eager" fetchPriority="high" sizes="100vw" className="absolute inset-0 h-full w-full object-cover object-[center_20%]" />
       <div className="absolute inset-0 bg-black/50" />
       <div className="container-custom relative z-10">
         <div className="max-w-3xl mx-auto text-center space-y-6">
@@ -19,25 +17,16 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg text-white/90 leading-relaxed font-medium drop-shadow">
-            At Andora, private duty care is handled with intention and attention to detail. Our approach prioritizes consistency, clear communication, and dependable support that families can rely on day to day.
+            Support that fits your family, in the home you love. Explore private-duty nursing, personal care, and overnight support across Houston, Memorial, River Oaks, and nearby communities. We’ll talk through your needs, schedule, and current availability.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              variant="cta"
-              size="large"
-              onClick={() => window.location.href = 'tel:+13462023538'}
-            >
-              Speak to a Care Specialist
-            </Button>
-            <Button
-              variant="outline"
-              size="large"
-              onClick={() => navigate('/contact')}
-              className="border-white text-white hover:bg-white hover:text-primary"
-            >
-              Schedule Free Assessment
-            </Button>
+            <a href="tel:+18326793716" className="rounded-lg bg-primary px-8 py-4 text-lg font-semibold text-white shadow-lg hover:bg-primary-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-white">
+              Call (832) 679-3716
+            </a>
+            <Link to="/contact" className="rounded-lg border-2 border-white px-8 py-4 text-lg font-semibold text-white hover:bg-white hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-white">
+              Discuss Care Needs
+            </Link>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6 border-t border-white/30">

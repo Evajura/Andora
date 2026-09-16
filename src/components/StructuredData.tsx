@@ -1,26 +1,30 @@
 import { Helmet } from 'react-helmet-async';
+import { brand } from '../lib/brand';
 
 export function LocalBusinessSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'MedicalBusiness',
-    name: 'Andora Home Care',
+    '@id': 'https://www.andorahealth.com/#organization',
+    name: brand.name,
+    legalName: brand.legalName,
+    alternateName: brand.shortName,
     url: 'https://www.andorahealth.com',
-    logo: 'https://www.andorahealth.com/Andora_BlackLogo_Variant_PNG@14x.png',
-    telephone: '+1-346-202-3538',
+    logo: `${brand.url}${brand.logo}`,
+    telephone: '+1-832-679-3716',
     email: 'Privatecare@andorahealth.com',
+    identifier: {
+      '@type': 'PropertyValue',
+      propertyID: 'Texas HCSSA License',
+      value: '024760',
+    },
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '5718 Westheimer Rd, Suite 1000',
-      addressLocality: 'Houston',
+      streetAddress: '7003 Telford Hollow Trail',
+      addressLocality: 'Richmond',
       addressRegion: 'TX',
-      postalCode: '77057',
+      postalCode: '77407',
       addressCountry: 'US',
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: 29.7372,
-      longitude: -95.4825,
     },
     openingHoursSpecification: [
       {
@@ -30,11 +34,11 @@ export function LocalBusinessSchema() {
         closes: '17:00',
       },
     ],
-    areaServed: {
-      '@type': 'City',
-      name: 'Houston',
-      sameAs: 'https://en.wikipedia.org/wiki/Houston',
-    },
+    areaServed: [
+      { '@type': 'AdministrativeArea', name: 'Harris County, Texas' },
+      { '@type': 'AdministrativeArea', name: 'Fort Bend County, Texas' },
+      { '@type': 'AdministrativeArea', name: 'Montgomery County, Texas' },
+    ],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Home Care Services',
@@ -60,6 +64,7 @@ export function LocalBusinessSchema() {
 
   return (
     <Helmet>
+      <script type="application/ld+json">{JSON.stringify({ '@context': 'https://schema.org', '@type': 'WebSite', '@id': `${brand.url}/#website`, name: brand.name, alternateName: brand.shortName, url: brand.url, publisher: { '@id': `${brand.url}/#organization` } })}</script>
       <script type="application/ld+json">{JSON.stringify(schema)}</script>
     </Helmet>
   );

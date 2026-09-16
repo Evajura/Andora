@@ -15,9 +15,9 @@ export default {
           dark: '#3A7BC8',
         },
         cta: {
-          DEFAULT: '#F97316',
+          DEFAULT: '#C2410C',
           light: '#FB923C',
-          dark: '#EA580C',
+          dark: '#9A3412',
         },
         care: {
           DEFAULT: '#16A34A',
