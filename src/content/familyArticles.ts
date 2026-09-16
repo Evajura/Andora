@@ -97,7 +97,7 @@ export const familyArticles = {
         heading: '4. Confirm the plan before leaving',
         text: [
           'Check the written schedule, covered tasks, price, cancellation terms, and payment arrangements. Ask whether the first visit can include an introduction before you leave. Do not assume a last-minute request or next-day start has been accepted until the agency confirms it.',
-          'When you return, note what worked well and what should change for the next visit. Andora welcomes respite-care inquiries from families across Greater Houston, with an office in Richmond. Call (832) 679-3716 to discuss your preferred dates, the household routine, and current availability. Use this checklist to prepare for that conversation—not as a substitute for an individual assessment. A clear, realistic first plan gives everyone a better starting point for future breaks.',
+          'When you return, note what worked well and what should change for the next visit. Andora welcomes respite-care inquiries from families across Greater Houston, with an office in Richmond. Call (832) 679-3716 to discuss your preferred dates, the household routine, and current availability. Use this checklist to prepare for that conversation, not as a substitute for an individual assessment. A clear, realistic first plan gives everyone a better starting point for future breaks.',
         ],
       },
     ],

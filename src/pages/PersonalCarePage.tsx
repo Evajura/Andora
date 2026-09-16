@@ -11,12 +11,12 @@ export default function PersonalCarePage() {
   const services = [
     {
       title: 'Bathing & Personal Hygiene',
-      description: 'Dignified assistance with bathing, grooming, oral care, and personal hygiene care for elderly at home — maintaining comfort and self-esteem every day.',
+      description: 'Dignified assistance with bathing, grooming, oral care, and personal hygiene care for elderly at home, maintaining comfort and self-esteem every day.',
       image: '/care-scenes/personal-hygiene.png',
     },
     {
       title: 'Mobility & Transfer Support',
-      description: 'Safe assistance with walking, transfers, and positioning for elderly with mobility issues — reducing fall risk while encouraging independence.',
+      description: 'Safe assistance with walking, transfers, and positioning for elderly with mobility issues, reducing fall risk while encouraging independence.',
       image: '/care-scenes/walker-support.png',
     },
     {
@@ -35,7 +35,7 @@ export default function PersonalCarePage() {
     {
       icon: Heart,
       title: 'Compassionate Caregivers',
-      description: 'Selected for genuine warmth and dedication — not just skills. Our caregivers treat every client like family.',
+      description: 'Selected for genuine warmth and dedication, not just skills. Our caregivers treat every client like family.',
     },
     {
       icon: Shield,
@@ -45,12 +45,12 @@ export default function PersonalCarePage() {
     {
       icon: Clock,
       title: 'Flexible Scheduling',
-      description: 'Hourly home care for seniors on your schedule — from a few hours a week to full-time daily support.',
+      description: 'Hourly home care for seniors on your schedule, from a few hours a week to full-time daily support.',
     },
     {
       icon: Users,
       title: 'Consistent Caregiver Matching',
-      description: 'We match caregivers based on needs, personality, and preferences — and keep the same caregiver for continuity.',
+      description: 'We match caregivers based on needs, personality, and preferences, and aim for continuity whenever possible.',
     },
   ];
 
@@ -124,7 +124,7 @@ export default function PersonalCarePage() {
         <div className="text-center mb-8">
           <h2 className="heading-2 mb-4">What Does a Caregiver Do for Elderly?</h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Our personal care services cover every aspect of daily living — from personal hygiene care for elderly at home to companionship and emotional support for seniors living alone.
+            Our personal care services cover every aspect of daily living, from personal hygiene care for elderly at home to companionship and emotional support for seniors living alone.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
@@ -237,7 +237,7 @@ export default function PersonalCarePage() {
           {[
             { step: '1', title: 'Free Consultation', description: 'Tell us about your loved one\'s needs, daily routine, and preferences. We\'ll answer all your questions.' },
             { step: '2', title: 'Care Assessment', description: 'A care coordinator evaluates your home environment and creates a customized in-home care plan for seniors.' },
-            { step: '3', title: 'Caregiver Matching', description: 'We match you with a caregiver based on personality, skills, and compatibility — not just availability.' },
+            { step: '3', title: 'Caregiver Matching', description: 'We match you with a caregiver based on personality, skills, and compatibility, not just availability.' },
             { step: '4', title: 'Care Begins', description: 'Your dedicated caregiver starts providing personal care with ongoing supervision and family communication.' },
           ].map((item, index) => (
             <div key={index} className="text-center">

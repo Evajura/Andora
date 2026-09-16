@@ -12,7 +12,7 @@ export default function RespiteCarePage() {
   const services = [
     {
       title: 'Temporary Caregiver Relief',
-      description: 'Take the break you need — whether for a few hours, a weekend, or an extended period — while a qualified caregiver steps in seamlessly for your loved one.',
+      description: 'Take the break you need, whether for a few hours, a weekend, or an extended period, while a qualified caregiver supports your loved one.',
       image: '/care-scenes/temporary-relief.png',
     },
     {
@@ -27,7 +27,7 @@ export default function RespiteCarePage() {
     },
     {
       title: 'Companion Care for Seniors',
-      description: 'Companion care services for seniors that go beyond supervision — meaningful engagement, conversation, activities, and emotional support to brighten their day.',
+      description: 'Companion care services for seniors that go beyond supervision, with meaningful engagement, conversation, activities, and emotional support.',
       image: '/care-scenes/garden-companionship.png',
     },
   ];
@@ -46,7 +46,7 @@ export default function RespiteCarePage() {
     {
       icon: Clock,
       title: 'Flexible Hours',
-      description: 'Hourly home care for seniors on your terms — from a few hours a week to overnight, weekend, or extended stays.',
+      description: 'Hourly home care for seniors on your terms, from a few hours a week to overnight, weekend, or extended stays.',
     },
     {
       icon: Users,
@@ -91,7 +91,7 @@ export default function RespiteCarePage() {
               </h1>
 
               <p className="text-gray-600 text-lg leading-relaxed mb-6 max-w-lg">
-                You can't pour from an empty cup. Our respite care for family caregivers in Houston gives you the time to rest, recharge, and take care of yourself — knowing your loved one is in compassionate, capable hands.
+                You cannot pour from an empty cup. Our respite care for family caregivers in Houston gives you time to rest, recharge, and take care of yourself while your loved one receives planned support.
               </p>
 
               <Button
@@ -123,7 +123,7 @@ export default function RespiteCarePage() {
         <div className="text-center mb-8">
           <h2 className="heading-2 mb-4">What Is Respite Care for Caregivers?</h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Respite care provides temporary relief for family caregivers while ensuring your loved one receives the same quality of compassionate care — from companionship to skilled support.
+            Respite care provides temporary relief for family caregivers while your loved one receives planned support, from companionship to skilled services when appropriate.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
@@ -155,7 +155,7 @@ export default function RespiteCarePage() {
           <div>
             <h2 className="heading-2 mb-6">Top Benefits of Home Care for Elderly Parents</h2>
             <p className="text-gray-600 mb-8 leading-relaxed text-lg">
-              Many family caregivers struggle with guilt when considering respite care. But taking regular breaks isn't selfish — it's essential. Rested caregivers provide better care, and your loved one benefits from fresh social interaction and professional support.
+              Many family caregivers struggle with guilt when considering respite care. Regular breaks can be important for the caregiver and the person receiving support. A planned break can bring fresh social interaction and help families maintain a sustainable routine.
             </p>
             <div className="grid sm:grid-cols-2 gap-6">
               {benefits.map((benefit, index) => (
@@ -194,7 +194,7 @@ export default function RespiteCarePage() {
           <div>
             <h2 className="heading-2 mb-6">How to Talk to Your Parents About Home Care</h2>
             <p className="text-gray-600 mb-6 leading-relaxed text-lg">
-              Starting the conversation about home care can be difficult. We recommend framing it around companionship and support rather than inability. Many seniors are more receptive to companion care services for seniors when they understand it means more social interaction and engagement — not loss of independence.
+              Starting the conversation about home care can be difficult. Consider framing it around companionship and support rather than inability. Many seniors are more receptive when they understand that care can add social interaction and support routines without taking away their voice in daily decisions.
             </p>
             <p className="text-gray-600 mb-8 leading-relaxed">
               Our care coordinators can help facilitate this conversation and even arrange a no-obligation introductory visit so your parent can meet their potential caregiver in a relaxed, comfortable setting.
@@ -225,7 +225,7 @@ export default function RespiteCarePage() {
           {[
             { step: '1', title: 'Share Your Needs', description: 'Tell us about your caregiving situation, your loved one\'s needs, and the schedule that works for you.' },
             { step: '2', title: 'Meet Your Caregiver', description: 'We introduce you to a matched caregiver and walk through your loved one\'s routines and preferences.' },
-            { step: '3', title: 'Smooth Handoff', description: 'Detailed care notes and instructions ensure seamless continuity — your loved one won\'t miss a beat.' },
+            { step: '3', title: 'Smooth Handoff', description: 'Detailed care notes and instructions support a clear handoff between scheduled visits.' },
             { step: '4', title: 'Rest & Recharge', description: 'Take your well-deserved break knowing your family member is receiving compassionate, professional care.' },
           ].map((item, index) => (
             <div key={index} className="text-center">
@@ -243,7 +243,7 @@ export default function RespiteCarePage() {
       <Section className="bg-gradient-to-br from-primary to-blue-700 text-white">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            You Deserve a Break — Your Loved One Deserves Great Care
+            You Deserve a Break. Your Loved One Deserves Thoughtful Care.
           </h2>
           <p className="text-xl text-blue-100 mb-8">
             Contact us today to arrange flexible respite care in Houston. Our compassionate caregivers are ready to step in so you can step back.
