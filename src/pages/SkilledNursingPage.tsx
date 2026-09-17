@@ -81,7 +81,7 @@ export default function SkilledNursingPage() {
       <section className="bg-white overflow-hidden">
         <div className="container-custom">
           <div className="grid md:grid-cols-2 gap-0 md:gap-8 items-center">
-            {/* Left — Text */}
+            {/* Left text */}
             <div className="pt-6 pb-4 md:py-10">
               <div className="flex items-center gap-2 mb-4">
                 <Stethoscope className="text-cta" size={20} />
@@ -109,7 +109,7 @@ export default function SkilledNursingPage() {
               </Button>
             </div>
 
-            {/* Right — Image */}
+            {/* Right image */}
             <div className="flex items-center justify-center md:py-4">
               <ResponsiveImage
                 src="/Layer 9.png"

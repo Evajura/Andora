@@ -101,7 +101,7 @@ export default function ServicesPage() {
             </Card>
           ))}
         </div>
-        <p className="mt-8 text-gray-600">Overnight or 24-hour coverage does not automatically mean a nurse is present at all times or that a caregiver lives in the home. Care arrangements depend on assessment and staffing. For a medical emergency, call 911.</p>
+        <p className="mt-8 text-gray-600">Care schedules are individualized. Call with the days, hours, location, and support you are considering so we can discuss appropriate options and current availability. Families may also ask about using long-term care insurance benefits. Coverage, payment steps, and reimbursement vary by policy. For a medical emergency, call 911.</p>
         <Link to="/resources/choosing-home-care-agency-houston" className="care-link inline-block mt-4">Questions to ask when choosing a home care agency</Link>
       </Section>
 
@@ -111,7 +111,7 @@ export default function ServicesPage() {
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="heading-2 text-white mb-6">Not Sure Which Service Is Right?</h2>
           <p className="text-xl text-blue-100 mb-8">
-            Understanding the differences between home care and home health care can be confusing. Contact us today for a free consultation — we'll help you determine the right type and level of care, answer your top questions, and create a personalized care plan.
+            Understanding the differences between home care and home health care can be confusing. Contact us for a care conversation. We can discuss the type and level of support you are considering, answer practical questions, and explain the next steps.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button

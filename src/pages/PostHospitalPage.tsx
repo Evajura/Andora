@@ -26,7 +26,7 @@ export default function PostHospitalPage() {
     },
     {
       title: 'Medication Management',
-      description: 'Expert medication administration, schedule coordination, and side-effect monitoring — especially critical during the transition from hospital to home care.',
+      description: 'Expert medication administration, schedule coordination, and side-effect monitoring, especially during the transition from hospital to home care.',
       image: '/medication_ad.png',
     },
   ];
@@ -40,7 +40,7 @@ export default function PostHospitalPage() {
     {
       icon: Clock,
       title: 'Rapid Care Start',
-      description: 'Care can begin within 24-48 hours of hospital discharge — when the risk of complications is highest.',
+      description: 'Care may be available within 24 to 48 hours of hospital discharge, depending on assessment and staffing availability.',
     },
     {
       icon: Shield,
@@ -122,7 +122,7 @@ export default function PostHospitalPage() {
         <div className="text-center mb-8">
           <h2 className="heading-2 mb-4">What to Expect from Post-Hospital Home Care</h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Our recovery care bridges the gap between hospital discharge and full independence — with skilled nursing oversight at every step.
+            Our recovery care helps bridge the gap between hospital discharge and greater independence, with skilled nursing oversight when appropriate.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
@@ -180,7 +180,7 @@ export default function PostHospitalPage() {
               />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-primary text-white rounded-xl p-6 shadow-lg max-w-[240px] hidden md:block">
-              <p className="text-3xl font-bold mb-1">24–48 hrs</p>
+              <p className="text-3xl font-bold mb-1">24 to 48 hrs</p>
               <p className="text-sm text-blue-100">Care starts after discharge</p>
             </div>
           </div>
@@ -207,7 +207,7 @@ export default function PostHospitalPage() {
               Many hospitalizations are caused by chronic conditions like diabetes, heart failure, and COPD. Our home care assistance for elderly with diabetes and other chronic illnesses provides the ongoing monitoring and support that prevents emergencies before they happen.
             </p>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              From post-surgery wound care to long-term rehabilitation, our licensed home care agency in Houston ensures your recovery plan is followed precisely — with direct communication to your medical team throughout.
+              From post-surgery wound care to long-term rehabilitation, our licensed home care agency in Houston coordinates with your medical team throughout the care plan.
             </p>
             <Button
               variant="primary"

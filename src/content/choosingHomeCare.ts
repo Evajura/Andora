@@ -9,7 +9,7 @@ export const choosingHomeCare = {
     },
     {
       heading: 'First, define the care you are comparing',
-      text: ['Write down the tasks, days, and times that need coverage. Include personal care, meals, companionship, and the times a family caregiver needs a break. If nursing tasks are involved, discuss them with the treating clinician and the agency before choosing a service.', 'Two quotes may cover very different arrangements. A daytime visit, an awake overnight shift, and a rotating 24-hour schedule are not interchangeable. Ask each agency to quote the same schedule and describe what is included.'],
+      text: ['Write down the tasks, days, and times that need coverage. Include personal care, meals, companionship, and the times a family caregiver needs a break. If nursing tasks are involved, discuss them with the treating clinician and the agency before choosing a service.', 'Two quotes may cover different arrangements. Ask each agency to quote the same preferred schedule and describe what is included so your family can compare clearly.'],
     },
     {
       heading: 'Ten questions to ask each agency',
@@ -21,7 +21,7 @@ export const choosingHomeCare = {
         '4. How do you screen, prepare, and match the people who will come into the home?',
         '5. Can we discuss preferences, household routines, language needs, and continuity of caregivers?',
         '6. Who arranges backup coverage if a caregiver is sick, late, or unable to complete a shift?',
-        '7. For overnight care, is the caregiver expected to remain awake, and how are handoffs handled?',
+        '7. For overnight or extended-hour care, can you discuss a schedule that fits our family’s needs?',
         '8. Who is our point of contact, how will updates be shared, and what is the after-hours process?',
         '9. What are the hourly rates, minimums, deposits, cancellation terms, and any weekend or holiday charges?',
         '10. How are changes to the care plan approved, and how do we increase, reduce, or end services?',
@@ -33,7 +33,7 @@ export const choosingHomeCare = {
     },
     {
       heading: 'Compare the written plan, not a promise',
-      text: ['Keep a short comparison sheet with the proposed schedule, services, total estimated cost, staffing process, and main contact. Ask about any answer that is unclear before paying a deposit or starting care.', 'Andora’s office is in Richmond, with care inquiries welcomed from families across Greater Houston. Call (832) 679-3716 to discuss your location, the kind of support you are considering, and current availability. This checklist is for planning a conversation; it does not replace an individual assessment or medical advice.'],
+      text: ['Keep a short comparison sheet with the proposed schedule, services, total estimated cost, staffing process, and main contact. Ask about any answer that is unclear before paying a deposit or starting care.', 'Andora’s office is in Richmond, with care inquiries welcomed from Fort Bend County and select Houston-area communities. Call (832) 679-3716 to discuss your location, the kind of support you are considering, and current availability. This checklist is for planning a conversation; it does not replace an individual assessment or medical advice.'],
     },
   ],
 };

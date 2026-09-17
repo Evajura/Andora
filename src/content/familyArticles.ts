@@ -1,49 +1,48 @@
 // Local editorial drafts. Owner review is required before public release.
 export const familyArticles = {
   'overnight-vs-24-hour-home-care-houston': {
-    title: 'Overnight vs. 24-Hour Home Care in Houston',
-    description: 'Compare overnight, 24-hour, and live-in home care in Houston. Questions about awake coverage, nursing, handoffs, and costs from Andora.',
+    title: 'Planning Overnight and 24-Hour Home Care',
+    description: 'A simple guide for families discussing overnight or extended-hour home care, preferred schedules, and current availability.',
     source: { label: 'Medicare: Home health services and coverage limits', url: 'https://www.medicare.gov/coverage/home-health-services' },
     sections: [
       {
-        heading: 'What is the difference between overnight and 24-hour home care?',
+        heading: 'Start with the support your family needs',
         text: [
-          'Overnight home care covers an agreed nighttime period. A 24-hour care schedule covers the full day and night, usually through coordinated shifts. A live-in arrangement describes where a caregiver stays; it does not, by itself, mean that one person remains awake and working all day and night. Ask an agency to spell out the actual coverage.',
-          'If your family is comparing overnight home care in Houston, start with the hours when help is needed rather than the service label. Perhaps a parent manages the daytime routine with family help but needs someone available at night. Or an adult child is returning to work and needs both daytime and overnight coverage. Those are different scheduling conversations. This Andora guide helps you organize the questions before requesting a quote; it is not a recommendation for a particular person’s care.',
+          'Overnight or 24-hour support begins with a straightforward conversation about when help is needed and what would make home feel safer or more manageable. Your family may be looking for help at bedtime, in the morning, after a hospital stay, or throughout a longer period of recovery.',
+          'You do not need to know the right service label before calling. Tell us about the support you are considering, the hours you have in mind, and the home where care is needed. We will discuss what may fit your situation and current availability.',
         ],
       },
       {
-        heading: 'Write down what a typical night looks like',
+        heading: 'Share the schedule you are considering',
         text: [
-          'Describe the usual evening, overnight, and morning routine. Note when a family member currently steps in and what they help with. Avoid sharing detailed medical histories through a general website form; discuss sensitive information through the agency’s appropriate intake process.',
-          'For example, “We need someone awake from 7 p.m. to 7 a.m., with help getting ready for bed and getting up in the morning” is more useful than “We need live-in care.” If a nurse is needed for specific clinical tasks, say that separately. Ask the treating clinician which activities need professional nursing and which can be handled as daily-living support.',
+          'Describe the usual evening, overnight, and morning routine. Note the tasks that need support, when a family member currently steps in, and the times you are considering. Avoid sharing detailed medical histories through a general website form; discuss sensitive information through the appropriate intake process.',
+          'If a nurse is needed for specific clinical tasks, let the treating clinician and care team know. Daily-living support and clinical nursing tasks may require different planning.',
         ],
         bullets: [
           'Which exact hours need coverage, including weekends?',
-          'Is the worker expected to remain awake throughout the shift?',
           'What assistance is needed, and are any tasks clinical?',
-          'Who covers the hours outside the proposed schedule?',
+          'Where will care take place, and what access details should the team know?',
+          'Who is the family contact for the first care conversation?',
         ],
       },
       {
-        heading: 'Ask how handoffs and backup coverage work',
+        heading: 'Ask for a clear care plan',
         text: [
-          'A schedule is only useful when everyone understands where one shift ends and the next begins. Ask who coordinates staffing, how care notes are passed on, and whom the family should contact if someone is delayed. Do not assume that a live-in caregiver can simply work additional hours without a separate coverage plan.',
-          'Houston-area logistics belong in that conversation. For a Downtown condo, arrange building entry, parking, and elevator access before the first visit. At a home in Memorial, River Oaks, or Richmond, discuss door access, pets, the household routine, and an agreed handoff location. These practical details can make the first visit less confusing; they do not establish that a particular schedule is available.',
+          'Before services begin, ask for a clear explanation of the proposed schedule, the support included, the rate structure, and who to contact with questions. This gives your family a practical plan rather than leaving important details to assumptions.',
+          'For a Downtown condo, arrange building entry, parking, and elevator access before the first visit. At a home in Memorial, River Oaks, Richmond, or another service area, discuss door access, pets, and the household routine. These practical details help the first visit go smoothly; they do not establish that a particular schedule is available.',
         ],
       },
       {
-        heading: 'Compare the same schedule in every written quote',
+        heading: 'Discuss payment and coverage early',
         text: [
-          'Ask agencies to price the same tasks and hours. Check minimum visits, weekend or holiday charges, deposits, cancellation terms, and how schedule changes affect the bill. A single hourly figure does not tell you the weekly total or whether nursing is included.',
-          'For a scheduling example only, twelve hours each night for seven nights equals eighty-four scheduled hours. Continuous coverage for seven full days equals one hundred sixty-eight hours. These figures describe coverage, not the workweek of one employee. Ask for the total estimate and the staffing arrangement in writing.',
-          'Do not assume Medicare will pay for continuous private-duty coverage. Medicare’s home health benefit does not cover 24-hour-a-day care at home, and eligibility and other limits apply to covered services. Use the official Medicare source below and confirm your own coverage with the plan or a qualified benefits adviser.',
+          'Ask for the total estimate, payment schedule, any minimum visits, and how a change in hours could affect the cost. Families using long-term care insurance should ask the plan about benefits, reimbursement rules, and required documentation before relying on coverage.',
+          'Andora works with private-pay families and families using long-term care insurance. Coverage and reimbursement vary by policy, so confirm the details directly with the plan and ask our team about the information that may be helpful for your records.',
         ],
       },
       {
         heading: 'Bring your schedule questions to Andora',
         text: [
-          'Andora’s office is in Richmond, and families across Greater Houston can contact us to discuss their address, the support needed, and the hours they have in mind. Start with a simple list of tasks and a preferred schedule. We will discuss assessment and current staffing availability before services are agreed. The goal is a clear plan that the family understands, not a label that leaves important gaps unexplained. Call (832) 679-3716 or use the contact link below to begin that conversation.',
+          'Andora’s office is in Richmond. Families in Fort Bend County and select Houston-area communities can call to discuss their address, the support needed, and the hours they have in mind. Start with a simple list of tasks and a preferred schedule. We will discuss assessment and current staffing availability before services are agreed. Call (832) 679-3716 to begin that conversation. Office visits are by appointment; please call before visiting.',
         ],
       },
     ],
@@ -97,7 +96,7 @@ export const familyArticles = {
         heading: '4. Confirm the plan before leaving',
         text: [
           'Check the written schedule, covered tasks, price, cancellation terms, and payment arrangements. Ask whether the first visit can include an introduction before you leave. Do not assume a last-minute request or next-day start has been accepted until the agency confirms it.',
-          'When you return, note what worked well and what should change for the next visit. Andora welcomes respite-care inquiries from families across Greater Houston, with an office in Richmond. Call (832) 679-3716 to discuss your preferred dates, the household routine, and current availability. Use this checklist to prepare for that conversation—not as a substitute for an individual assessment. A clear, realistic first plan gives everyone a better starting point for future breaks.',
+          'When you return, note what worked well and what should change for the next visit. Andora welcomes respite-care inquiries from families in Fort Bend County and select Houston-area communities, with an office in Richmond. Call (832) 679-3716 to discuss your preferred dates, the household routine, and current availability. Use this checklist to prepare for that conversation, not as a substitute for an individual assessment. A clear, realistic first plan gives everyone a better starting point for future breaks.',
         ],
       },
     ],

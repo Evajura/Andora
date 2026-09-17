@@ -20,7 +20,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-sm leading-relaxed">
-              Providing compassionate, professional home healthcare services to families across Greater Houston.
+              Based in Richmond, providing compassionate, professional home healthcare services to Fort Bend County and select Houston-area communities.
             </p>
           </div>
 
@@ -65,7 +65,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin size={16} className="mt-1 flex-shrink-0" />
-                <span>7003 Telford Hollow Trail<br />Richmond, TX 77407</span>
+                <span>7003 Telford Hollow Trail<br />Richmond, TX 77407<br /><span className="text-xs text-gray-400">Call before visiting.</span></span>
               </li>
             </ul>
 

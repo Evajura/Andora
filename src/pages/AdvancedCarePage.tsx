@@ -11,7 +11,7 @@ export default function AdvancedCarePage() {
   const services = [
     {
       title: '24-Hour Nursing Care',
-      description: 'Discuss awake overnight nursing or coordinated day-and-night clinical coverage with our team. The schedule and nursing level depend on assessment, the care plan, and available staffing.',
+      description: 'Discuss overnight or extended-hour clinical support with our team. The schedule and nursing level depend on assessment, the care plan, and current availability.',
       image: '/care-scenes/nighttime-nursing.png',
     },
     {
@@ -21,7 +21,7 @@ export default function AdvancedCarePage() {
     },
     {
       title: 'Live-In Caregiver Services',
-      description: 'Ask about available household and personal-care support, including groceries, meals, and familiar routines. Live-in arrangements require agreed rest periods and backup coverage; they are not the same as continuous awake nursing.',
+      description: 'Ask about available household and personal-care support, including groceries, meals, and familiar routines. We will discuss the schedule, care plan, and current availability with your family.',
       image: '/care-scenes/groceries-doorstep.png',
     },
   ];
@@ -201,10 +201,10 @@ export default function AdvancedCarePage() {
           <div>
             <h2 className="heading-2 mb-6">Home Care for Seniors with Alzheimer's Disease</h2>
             <p className="text-gray-600 mb-6 leading-relaxed text-lg">
-              Choosing between home care vs. nursing home care is one of the most difficult decisions families face. Research consistently shows that seniors with dementia and Alzheimer's thrive in familiar environments with consistent caregivers — exactly what our 24-hour in-home care provides.
+              Choosing between home care and nursing home care is one of the most difficult decisions families face. Familiar routines and consistent support can help many people with dementia or Alzheimer's feel more comfortable at home.
             </p>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              Our specialized home care for dementia patients in Houston provides the structure, safety, and emotional support in senior home care that helps slow decline and improve quality of life — without the disruption of facility placement.
+              Our specialized home care for dementia patients in Houston can provide structure, safety, and emotional support while helping families consider care options without an immediate facility transition.
             </p>
             <Button
               variant="primary"
