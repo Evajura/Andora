@@ -64,7 +64,7 @@ export default function AboutPage() {
                 We provide RN-led private duty care built on structure, transparency, and dependable coordination. Our model bridges clinical knowledge with personalized in-home support, ensuring every care plan is intentional, clearly communicated, and thoughtfully executed.
               </p>
               <p>
-                At Andora, we operate with professionalism, discretion, and careful attention to detail, delivering care that prioritizes safety, dignity, and long-term stability at home. We proudly offer affordable elderly care and elder care services for veterans and their families across the Greater Houston area.
+                At Andora, we operate with professionalism, discretion, and careful attention to detail, delivering care that prioritizes safety, dignity, and long-term stability at home. Our office is in Richmond, and we welcome care inquiries from Fort Bend County and select Houston-area communities.
               </p>
             </div>
           </div>

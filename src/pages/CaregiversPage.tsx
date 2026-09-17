@@ -34,7 +34,7 @@ export default function CaregiversPage() {
     <>
       <SEO
         title="Houston Careers | Andora Private Duty Home Health"
-        description="Explore nursing and caregiver opportunities with Andora Private Duty Home Health in Greater Houston. View current openings and application details."
+        description="Explore nursing and caregiver opportunities with Andora Private Duty Home Health in Richmond, Fort Bend County, and select Houston-area communities."
         canonical="/caregivers"
       />
 
@@ -110,7 +110,7 @@ export default function CaregiversPage() {
         <div className="text-center mb-10">
           <h2 className="heading-2 mb-4">Current Openings</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            We welcome interest from compassionate home care professionals in Greater Houston. To be considered, send your resume and a short introduction directly to our team.
+            We welcome interest from compassionate home care professionals in Richmond, Fort Bend County, and select Houston-area communities. To be considered, send your resume and a short introduction directly to our team.
           </p>
         </div>
         <div className="max-w-4xl mx-auto rounded-2xl border border-gray-200 bg-white p-8 shadow-lg md:p-10">

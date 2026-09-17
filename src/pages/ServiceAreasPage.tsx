@@ -8,7 +8,7 @@ const areas = ['Houston', 'Richmond', 'Memorial', 'Downtown Houston', 'River Oak
 const faqs = [
   { question: 'Where is Andora’s office?', answer: 'Our office is at 7003 Telford Hollow Trail, Richmond, TX 77407. Care takes place in the client’s home; the Houston neighborhoods listed here are service areas, not additional office locations.' },
   { question: 'Can you arrange care in Memorial, River Oaks, or Downtown Houston?', answer: 'Contact Andora with the address, type of support, preferred start date, and schedule. Our team confirms whether the location and requested care can be staffed before services begin.' },
-  { question: 'Do you provide overnight or 24-hour support?', answer: 'Andora offers overnight and around-the-clock care options. The appropriate schedule, staffing, and availability must be discussed individually; a rotating schedule is different from one person working continuously.' },
+  { question: 'Do you provide overnight or 24-hour support?', answer: 'Andora offers overnight and extended-hour care options. Call with the preferred days, hours, location, and support you are considering so we can discuss availability and next steps.' },
 ];
 export default function ServiceAreasPage() {
   return <>

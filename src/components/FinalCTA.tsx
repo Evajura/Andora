@@ -7,10 +7,10 @@ export default function FinalCTA() {
       <div className="container-custom">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-h2 md:text-[48px] mb-6 leading-tight">
-            Talk Through Care at Home
+            Care Starts With a Conversation
           </h2>
           <p className="text-xl mb-10 opacity-95 leading-relaxed">
-            Start with a straightforward conversation about the support you need, the schedule you are considering, and whether Andora is the right fit.
+            Tell us what is changing at home. We will listen, answer your questions, and help you understand the next steps for care.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
@@ -35,9 +35,9 @@ export default function FinalCTA() {
           </div>
 
           <div className="border-t border-white/20 pt-8">
-            <p className="text-lg mb-2">Available 24 Hours a Day, 7 Days a Week</p>
+            <p className="text-lg mb-2">Call to Discuss Care Needs</p>
             <p className="opacity-90">
-              Serving families across Greater Houston with excellence and compassion
+              Based in Richmond, serving Fort Bend County and select Houston-area communities. Office visits are by appointment.
             </p>
           </div>
         </div>

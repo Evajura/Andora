@@ -8,8 +8,8 @@ import { FAQPageSchema } from '../components/StructuredData';
 export default function ResourcesPage() {
   const guides = [
     {
-      title: 'Overnight vs. 24-Hour Home Care in Houston',
-      description: 'Compare awake overnight coverage, rotating shifts, live-in arrangements, and the questions to ask before requesting a quote.',
+      title: 'Planning Overnight and 24-Hour Home Care',
+      description: 'A simple guide to discussing the support, schedule, and availability your family needs at home.',
       category: 'Planning Coverage', slug: 'overnight-vs-24-hour-home-care-houston'
     },
     {
@@ -115,13 +115,13 @@ export default function ResourcesPage() {
     },
     {
       question: 'Can we arrange overnight or 24-hour support?',
-      answer: 'It depends on the exact hours, tasks, location, assessment needs, and staffing availability. Ask about awake coverage, shift handoffs, backup coverage, and how the schedule will actually be staffed.',
-      link: { to: '/resources/overnight-vs-24-hour-home-care-houston', label: 'Read the overnight and 24-hour home care guide.' }
+      answer: 'Yes. Tell us the days and hours you need, where care will take place, and the support you are considering. We will discuss an appropriate schedule, current availability, and next steps with your family.',
+      link: { to: '/resources/overnight-vs-24-hour-home-care-houston', label: 'Read the guide to planning overnight or 24-hour support.' }
     },
     {
-      question: 'How is private duty home care paid for?',
-      answer: 'Payment arrangements vary by family, service, and benefits. Ask for a written explanation of the schedule, what is included, payment methods, long-term care insurance documentation, and any out-of-pocket responsibility.',
-      link: { to: '/resources/how-to-pay-for-home-care', label: 'Read how Houston families can prepare for home care costs.' }
+      question: 'Can we use long-term care insurance for private duty care?',
+      answer: 'Andora works with families using long-term care insurance. Benefits, eligibility, payment steps, and reimbursement rules vary by policy. Ask us what documentation may be helpful, then confirm coverage directly with the plan before services begin.',
+      link: { to: '/resources/how-to-pay-for-home-care', label: 'Read the guide to private pay and long-term care insurance planning.' }
     },
     {
       question: 'What should I prepare before calling a home care agency?',
@@ -171,8 +171,8 @@ export default function ResourcesPage() {
   return (
     <>
       <SEO
-        title="Family Guides | Andora Private Duty Home Health"
-        description="Compare home care options, plan costs, and prepare questions for an agency. Practical guides for Houston families from Andora Private Duty Home Health."
+        title="Family Care Guides & FAQs | Andora Private Duty Home Health"
+        description="Original family care guides, practical FAQs, and long-term care insurance planning for Richmond, Fort Bend County, and Houston-area families."
         canonical="/resources"
       />
       <FAQPageSchema faqs={faqs} />
@@ -180,9 +180,9 @@ export default function ResourcesPage() {
         className="pt-24 pb-8 bg-gradient-to-br from-blue-50 to-white"
       >
         <div className="text-center max-w-3xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl p-8">
-          <h1 className="heading-1 mb-6">Resources & Support</h1>
+          <h1 className="heading-1 mb-6">Family Care Guides & FAQs</h1>
           <p className="text-xl text-gray-600 leading-relaxed">
-            Clear answers for the decisions families face: what kind of support is needed, how to compare agencies, and what to ask about costs. Start with a guide, then talk with our team about your situation.
+            Original Andora guides and clear answers for the decisions families face: what kind of support is needed, how to compare agencies, and what to ask about private pay or long-term care insurance. Start with a guide, then talk with our team about your situation.
           </p>
         </div>
       </Section>
@@ -190,7 +190,10 @@ export default function ResourcesPage() {
       <Section>
         <div className="flex items-center gap-3 mb-8">
           <BookOpen className="text-primary" size={32} />
-          <h2 className="heading-2">Care Guides & Articles</h2>
+          <div>
+            <h2 className="heading-2">Andora Family Care Guides</h2>
+            <p className="mt-2 text-gray-600">Practical articles written for families planning care at home in Richmond, Fort Bend County, and select Houston-area communities.</p>
+          </div>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {guides.map((guide, index) => (
@@ -202,7 +205,7 @@ export default function ResourcesPage() {
               <h3 className="font-bold text-lg mb-3">{guide.title}</h3>
               <p className="text-gray-600 text-sm mb-4">{guide.description}</p>
               <div className="flex items-center gap-2 text-primary font-medium text-sm">
-                Read guide <ExternalLink size={16} />
+                Read full guide <ExternalLink size={16} />
               </div>
             </Card>
             </Link>
@@ -242,7 +245,10 @@ export default function ResourcesPage() {
       <Section>
         <div className="flex items-center gap-3 mb-8">
           <HelpCircle className="text-primary" size={32} />
-          <h2 className="heading-2">Frequently Asked Questions</h2>
+          <div>
+            <h2 className="heading-2">Frequently Asked Questions</h2>
+            <p className="mt-2 text-gray-600">Quick answers live here. Each question also leads to a fuller Andora guide when your family needs more detail.</p>
+          </div>
         </div>
         <div className="max-w-3xl mx-auto space-y-4">
           {faqs.map((faq, index) => (
@@ -250,7 +256,7 @@ export default function ResourcesPage() {
               <h3 className="font-bold text-lg mb-3 text-primary">{faq.question}</h3>
               <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
               <Link to={faq.link.to} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary underline underline-offset-4">
-                {faq.link.label} <ExternalLink size={15} />
+                Explore the full guide: {faq.link.label} <ExternalLink size={15} />
               </Link>
             </Card>
           ))}

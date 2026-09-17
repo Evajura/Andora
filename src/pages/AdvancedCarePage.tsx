@@ -11,7 +11,7 @@ export default function AdvancedCarePage() {
   const services = [
     {
       title: '24-Hour Nursing Care',
-      description: 'Discuss awake overnight nursing or coordinated day-and-night clinical coverage with our team. The schedule and nursing level depend on assessment, the care plan, and available staffing.',
+      description: 'Discuss overnight or extended-hour clinical support with our team. The schedule and nursing level depend on assessment, the care plan, and current availability.',
       image: '/care-scenes/nighttime-nursing.png',
     },
     {
@@ -21,7 +21,7 @@ export default function AdvancedCarePage() {
     },
     {
       title: 'Live-In Caregiver Services',
-      description: 'Ask about available household and personal-care support, including groceries, meals, and familiar routines. Live-in arrangements require agreed rest periods and backup coverage; they are not the same as continuous awake nursing.',
+      description: 'Ask about available household and personal-care support, including groceries, meals, and familiar routines. We will discuss the schedule, care plan, and current availability with your family.',
       image: '/care-scenes/groceries-doorstep.png',
     },
   ];
