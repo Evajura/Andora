@@ -72,8 +72,8 @@ export default function PersonalCarePage() {
   return (
     <>
       <SEO
-        title="Houston Personal Care | Andora Private Duty Home Health"
-        description="Personal care for Houston-area families, including bathing, grooming, meal preparation, companionship, and daily-living assistance. Call (832) 679-3716."
+        title="Personal Care for Seniors in Houston | Andora"
+        description="Personal care and daily support for seniors in Houston and Fort Bend County. Discuss bathing, routines, companionship, and current availability."
         canonical="/services/personal-care"
       />
 
@@ -88,7 +88,7 @@ export default function PersonalCarePage() {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-5xl font-heading font-bold text-primary leading-[1.05] mb-5">
-                Personal Care<br />& Daily Support
+                Personal Care for Seniors<br />in Houston
               </h1>
 
               <p className="text-gray-600 text-lg leading-relaxed mb-6 max-w-lg">

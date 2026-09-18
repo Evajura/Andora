@@ -72,8 +72,8 @@ export default function SkilledNursingPage() {
   return (
     <>
       <SEO
-        title="Houston Skilled Nursing | Andora Private Duty Home Health"
-        description="Skilled nursing care at home for Houston-area families. Discuss appropriate in-home clinical support and availability at (832) 679-3716."
+        title="Private Duty Nursing in Houston | Andora"
+        description="Private duty nursing for Houston and Fort Bend County families. Discuss appropriate in-home clinical support, care needs, and current availability."
         canonical="/services/skilled-nursing"
       />
 
@@ -89,11 +89,11 @@ export default function SkilledNursingPage() {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-5xl font-heading font-bold text-primary leading-[1.05] mb-5">
-                Skilled Nursing<br />Care
+                Private Duty Nursing<br />in Houston
               </h1>
 
               <p className="text-gray-600 text-lg leading-relaxed mb-6 max-w-lg">
-                Hospital-level nursing expertise delivered in the comfort of your home. As a licensed home care agency in Houston, our RNs and LVNs provide comprehensive in home care services for seniors from post-surgery recovery to chronic illness management.
+                Discuss in-home nursing support for recovery, ongoing clinical needs, or a changing care plan. As a licensed provider, Andora can discuss appropriate private duty nursing support, assessment needs, and current availability.
               </p>
 
               <Button

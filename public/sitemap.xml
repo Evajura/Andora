@@ -80,4 +80,16 @@
     <loc>https://www.andorahealth.com/resources/respite-care-planning-houston</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://www.andorahealth.com/resources/private-duty-home-care-explained</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.andorahealth.com/resources/prepare-for-home-care-assessment</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.andorahealth.com/resources/hospital-discharge-home-care-questions</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>

@@ -70,8 +70,8 @@ export default function PostHospitalPage() {
   return (
     <>
       <SEO
-        title="Post-Hospital Care | Andora Private Duty Home Health"
-        description="Post-hospital and post-surgery home care support for Houston-area families. Discuss recovery support, care coordination, and availability at (832) 679-3716."
+        title="Post-Hospital Home Care in Houston | Andora"
+        description="Plan home support after a hospital stay in Houston or Fort Bend County. Discuss recovery routines, care coordination, and current availability."
         canonical="/services/post-hospital-recovery"
       />
 
@@ -86,7 +86,7 @@ export default function PostHospitalPage() {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-5xl font-heading font-bold text-primary leading-[1.05] mb-5">
-                Post-Hospital<br />Recovery
+                Post-Hospital Home Care<br />in Houston
               </h1>
 
               <p className="text-gray-600 text-lg leading-relaxed mb-6 max-w-lg">

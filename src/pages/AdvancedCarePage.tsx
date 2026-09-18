@@ -67,8 +67,8 @@ export default function AdvancedCarePage() {
   return (
     <>
       <SEO
-        title="Houston 24/7 Care | Andora Private Duty Home Health"
-        description="Around-the-clock home care and dementia support for Houston-area families. Discuss care needs and availability at (832) 679-3716."
+        title="24-Hour Home Care in Houston | Andora"
+        description="Discuss overnight or 24-hour home care for Houston and Fort Bend County families. Review care needs, schedules, and current availability."
         canonical="/services/24-7-care"
       />
 
@@ -83,7 +83,7 @@ export default function AdvancedCarePage() {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-5xl font-heading font-bold text-primary leading-[1.05] mb-5">
-                Advanced Care<br />& 24-Hour Support
+                24-Hour Home Care<br />in Houston
               </h1>
 
               <p className="text-gray-600 text-lg leading-relaxed mb-6 max-w-lg">

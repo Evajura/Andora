@@ -71,8 +71,8 @@ export default function RespiteCarePage() {
   return (
     <>
       <SEO
-        title="Houston Respite Care | Andora Private Duty Home Health"
-        description="Respite care and family caregiver support for Houston-area families. Discuss schedules, support needs, and availability at (832) 679-3716."
+        title="Respite Care in Houston & Nearby Communities | Andora"
+        description="Plan respite care for a loved one in Houston and nearby communities. Discuss schedules, family support needs, and current availability with Andora."
         canonical="/services/respite-care"
       />
 
@@ -87,11 +87,11 @@ export default function RespiteCarePage() {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-5xl font-heading font-bold text-primary leading-[1.05] mb-5">
-                Respite Care<br />& Family Support
+                Respite Care in Houston<br />& Nearby Communities
               </h1>
 
               <p className="text-gray-600 text-lg leading-relaxed mb-6 max-w-lg">
-                You cannot pour from an empty cup. Our respite care for family caregivers in Houston gives you time to rest, recharge, and take care of yourself while your loved one receives planned support.
+                When family caregiving needs a pause, respite care provides planned support at home. Talk with Andora about the schedule, routines, and current availability your family needs in Houston and nearby communities.
               </p>
 
               <Button
